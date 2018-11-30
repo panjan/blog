@@ -5,7 +5,7 @@ date:   2018-11-27 21:46:18 +0100
 categories: wearables
 ---
 
-![green alien](/assets/alien_green3.gif)
+![green alien](/blog/assets/alien_green3.gif)
 
 The awesome [Glowing Mirror Mask tutorial](https://learn.adafruit.com/glowing-mirror-mask/introduction) by Adafruit inspired me to make this Halloween mask. The main differences are that I used a cool alien design and cheaper parts. Also the image is printed (not cut into vinyl) which allows us to use any shapes and even colours.
 
@@ -54,7 +54,7 @@ TODO: safety first disclaimer
 - TODO: fritzing scheme
 - test it! have some fun!
 
-![first test](/assets/alien_first_test.png)
+![first test](/blog/assets/alien_first_test.png)
 *First test of the infinity mirror effect. Wow!*
 
 ## Choosing Design
@@ -67,14 +67,14 @@ TIP: If you're buying an image, use Google image search to see if there's a bett
 
 Print the mask on an A4 transparent self-adhesive foil. You can do this at home if you have a suitable printer and transparency foil. I had it done at a local copy centre. Make sure you crop the image as much as possible so that there are no margins when you print it. For an adult-sized mask the A4 format is just wide enough. First try printing the image on an ordinary paper if you don't want to risk wasting a transparency foil.
 
-![alien printed on transparency foil](/assets/alien_foil.jpeg)
+![alien printed on transparency foil](/blog/assets/alien_foil.jpeg)
 *This is how the image looks printed on a transparency foil.*
 
 Stick the transparency foil to the one-way mirror foil. First peel the thin strip on the edge of the transparency foil. Align it with the edge of your one-way mirror foil. Carefully peel the rest of the sticker while TODO: vyhlazovani bublinek.
 
 Use a utility knife to cut out the mask.
 
-![transparency foil on one-way mirror foil](/assets/alien_foil_cut.jpeg)
+![transparency foil on one-way mirror foil](/blog/assets/alien_foil_cut.jpeg)
 *Transparency foil on a one-way mirror foil.*
 
 ## Making the Back Layer
@@ -83,7 +83,7 @@ Use the front layer as a template to cut out the felt and holographic foil layer
 
 - make the front layer slightly wider so that it bends better
 
-![holographic foil and felt](/assets/alien_holographic_felt.jpeg)
+![holographic foil and felt](/blog/assets/alien_holographic_felt.jpeg)
 
 Use your hot glue gun to glue the two layers together.
 
@@ -97,29 +97,29 @@ Sew the LED strip to the edge of the back layer. Leave a small margin between th
 
 When you're about to close the loop, cut off the excess of the LED strip using scissors (TODO: link to LED strip cuttin tutorial). Cut a hole for the connector and pull it through.
 
-![led strip attached to back layer](/assets/alien_led_strip.jpeg)
+![led strip attached to back layer](/blog/assets/alien_led_strip.jpeg)
 *LED strip attached to the back layer*
 
 Isolate the end of the LED strip using a shrink tube. Squeeze the end with pliers as in the picture below.
 
-![led strip isolation](/assets/alien_led_strip_ending.jpeg)
+![led strip isolation](/blog/assets/alien_led_strip_ending.jpeg)
 
 Use jumper cables to connect your Wemos and check that everything is still working.
 
-![led strip test](/assets/alien_led_strip_test.jpeg)
+![led strip test](/blog/assets/alien_led_strip_test.jpeg)
 
 ## Attaching the Front Layer
 
 Glue the front layer to the LED strip using silicone glue. Use tape to hold everything together. Wait until the next day to let the glue dry completely.
 
-![glueing front layer](/assets/alien_silicone_glue.jpeg)
+![glueing front layer](/blog/assets/alien_silicone_glue.jpeg)
 *You can see tape holding the mask together while the silicon glue dries.*
 
 ## Connecting the Board
 
 Solder connections according to the Fritzing scheme. Strengthen the connections using a hot glue gun. Sew Wemos to the inside of the mask. Isolate the unused power cables.
 
-![wemos connected](/assets/alien_wemos.jpeg)
+![wemos connected](/blog/assets/alien_wemos.jpeg)
 
 ## Battery Holder and Charging
 
@@ -129,17 +129,17 @@ Solder connections according to the Fritzing scheme. Strengthen the connections 
 
 Cover the Wemos with some felt (use hot glue gun). Allow for access to the micro USB port.
 
-![wemos covered with felt](/assets/alien_wemos_covered.jpeg)
+![wemos covered with felt](/blog/assets/alien_wemos_covered.jpeg)
 
 Sew a flexible strip to the mask and enjoy!
 
-![alien drinking stout](/assets/alien_beer.jpeg)
+![alien drinking stout](/blog/assets/alien_beer.jpeg)
 
 ## Things I Could Have Done Better
 
 - take better care of it (it got stolen)
 
-![green alien](/assets/alien_green.gif)
+![green alien](/blog/assets/alien_green.gif)
 
 ----------
 - prototyping and coding
