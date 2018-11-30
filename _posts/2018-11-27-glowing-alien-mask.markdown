@@ -132,13 +132,11 @@ Cover the Wemos with some felt (use hot glue gun). Allow for access to the micro
 
 Sew a flexible strip to the mask and enjoy!
 
-![alien drinking stout](/blog/assets/alien_beer.jpeg)
+![green alien](/blog/assets/alien_green.gif)
 
 ## Things I Could Have Done Better
 
 - take better care of it (it got stolen)
-
-![green alien](/blog/assets/alien_green.gif)
 
 ----------
 - prototyping and coding
