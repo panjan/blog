@@ -2,7 +2,6 @@
 layout: post
 title:  "Making a Glowing Alien Mask"
 date:   2018-11-27 21:46:18 +0100
-categories: wearables
 ---
 
 ![green alien](/blog/assets/alien_green3.gif)
