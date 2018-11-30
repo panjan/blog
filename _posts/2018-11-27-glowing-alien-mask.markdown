@@ -130,10 +130,6 @@ Sew a flexible strip to the mask and enjoy!
 
 ![green alien](/blog/assets/alien_green.gif)
 
-## Things I Could Have Done Better
-
-- take better care of it (it got stolen)
-
 ----------
 - prototyping and coding
 - glowing mirror effect
