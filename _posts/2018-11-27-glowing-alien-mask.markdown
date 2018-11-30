@@ -94,7 +94,7 @@ I cut out the eyes above the "eyebrows" of the alien. I was afraid that the hole
 
 Sew the LED strip to the edge of the back layer. Leave a small margin between the LED strip and the edge so that the LED strip doesn't slide off of the back layer.
 
-When you're about to close the loop, cut off the excess of the LED strip using scissors (TODO: link to LED strip cuttin tutorial). Cut a hole for the connector and pull it through.
+When you're about to close the loop, cut off the excess of the LED strip using scissors (TODO: link to LED strip cuttin tutorial). Cut a hole for the connector and pull it through. Use jumper cables to connect your Wemos and check that everything is still working.
 
 ![led strip test](/blog/assets/alien_led_strip_test.jpeg)
 *LED strip attached to the back layer*
@@ -102,8 +102,6 @@ When you're about to close the loop, cut off the excess of the LED strip using s
 Isolate the end of the LED strip using a shrink tube. Squeeze the end with pliers as in the picture below.
 
 ![led strip isolation](/blog/assets/alien_led_strip_ending.jpeg)
-
-Use jumper cables to connect your Wemos and check that everything is still working.
 
 ## Attaching the Front Layer
 
