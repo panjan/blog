@@ -10,9 +10,13 @@ The awesome [Glowing Mirror Mask tutorial](https://learn.adafruit.com/glowing-mi
 
 ## Required Skills
 
-- you should be able to blink a LED on Wemos (make sure you have drivers from Espressif installed)
+You should be able to do the following. There are plenty tutorials on these topics.
+
 - using a breadboard
 - soldering
+- blinking a LED on the Wemos board
+
+  > A common pitfall in flashing the Wemos board is not having [drivers for the USB to serial converter](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers).
 
 ## Parts and Materials
 
