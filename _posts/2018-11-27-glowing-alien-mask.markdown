@@ -26,7 +26,7 @@ All of the parts can be ordered from eBay or AliExpress.
 - led strip
 - wemos d1 mini
 - wemos battery shield
-- battery
+- 3.7V lithium battery
 - battery holder
 - battery connector
 - wire, jumpers
@@ -48,7 +48,7 @@ All of the parts can be ordered from eBay or AliExpress.
 - utility knife
 - wire cutter
 
-TODO: safety first disclaimer
+> Before you start with this project make sure you understand the risks of working with electronics and lithium batteries (they blow up if shorted!). The mask is not waterproof.
 
 ## Light Up the LEDs
 
