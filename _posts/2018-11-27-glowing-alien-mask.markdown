@@ -55,7 +55,7 @@ All of the parts can be ordered from eBay or AliExpress.
 - flash Wemos (TODO: link to tutorial)
 - [adafruit neopixel library](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-installation)
 
-![fritzing scheme](/blog/assets/wemos_led_strip_schema.jpg)
+![fritzing scheme](/blog/assets/wemos_led_strip_wiring.png)
 
 There might be 2 extra cables for external power supply. You don't need them as Wemos has a 5V output.
 
