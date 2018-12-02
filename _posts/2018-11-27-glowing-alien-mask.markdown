@@ -37,7 +37,7 @@ All of the parts can be ordered from eBay or AliExpress.
 - one-way mirror foil
 - silicone glue
 - craft felt
-- gumicka
+- flexible strip
 
 ## Tools
 
