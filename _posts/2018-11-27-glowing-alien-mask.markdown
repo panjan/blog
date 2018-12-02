@@ -30,9 +30,7 @@ All of the parts can be ordered from eBay or AliExpress.
 - 3.7V lithium battery with connector
 - male-male jumper cables
 - bread board
-- bread board compatible 3.3V power supply
 - shrink tubes
-- electric tape?
 - holographic foil or paper
 - one-way mirror foil
 - silicone glue
@@ -72,7 +70,7 @@ TIP: If you're buying an image, use Google image search to see if there's a bett
 
 ## Making the Front Layer
 
-Print the mask on an A4 transparent self-adhesive foil. You can do this at home if you have a suitable printer and transparency foil. I had it done at a local copy centre. Make sure you crop the image as much as possible so that there are no margins when you print it. For an adult-sized mask the A4 format is just wide enough. First try printing the image on an ordinary paper if you don't want to risk wasting a transparency foil.
+Print the mask on an A4 transparent self-adhesive foil. You can do this at home if you have a suitable printer and transparency foil. I had it done at a local copy centre. Make sure you crop the image as much as possible so that there are no margins on the sides. For an adult-sized mask the A4 format is just wide enough. First try printing the image on an ordinary paper if you don't want to risk wasting a transparency foil.
 
 ![alien printed on transparency foil](/blog/assets/alien_foil.jpeg)
 *This is how the image looks printed on a transparency foil.*
