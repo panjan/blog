@@ -92,9 +92,9 @@ Use the front layer as a template to cut out the felt and holographic foil layer
 
 Use your hot glue gun to glue the two layers together.
 
-## Cut Out the Eyes
+## Cut Out Holes for Eyes
 
-I cut out the eyes above the "eyebrows" of the alien. I was afraid that the holes would look bad so I made them quite small. It doesn't look bad at all and I should have made them bigger as  it's quite hard to see with the mask on.
+I cut out the holes above the "eyebrows" of the alien. I was afraid that the holes would look bad so I made them quite small. It doesn't look bad at all and I should have made them bigger as  it's quite hard to see with the mask on.
 
 ## Attaching the LED Strip
 
