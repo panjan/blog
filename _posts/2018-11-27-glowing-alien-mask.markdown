@@ -15,7 +15,7 @@ You should be able to do the following. There are plenty tutorials on these topi
 - using a breadboard
 - soldering
 - sewing
-- blinking a LED on the Wemos board
+- programming the Wemos board using Arduino IDE (at least blink a led)
 
   > A common pitfall in flashing the Wemos board is not having [drivers for the USB to serial converter](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers).
 
@@ -50,16 +50,17 @@ All of the parts can be ordered from eBay or AliExpress.
 
 > Before you start with this project make sure you understand the risks of working with electronics and lithium batteries (they blow up if shorted!). The mask is not waterproof.
 
+## Flashing Wemos
+
+Flash the Wemos using Arduino IDE. Use the [Adafruit Neopixel library](https://github.com/adafruit/Adafruit_NeoPixel) to control the LEDs. Start with [this example](https://github.com/adafruit/Adafruit_NeoPixel/blob/master/examples/strandtest/strandtest.ino).
+
 ## Light Up the LEDs
 
-- flash Wemos (TODO: link to tutorial)
-- [adafruit neopixel library](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-installation)
+First solder headers to the Wemos to make it breadboard-compatible. Then connect the LED strip according to the following diagram.
 
-![fritzing scheme](/blog/assets/wemos_led_strip_wiring.png)
+![wiring diagram](/blog/assets/wemos_led_strip_wiring.png)
 
 There might be 2 extra cables for external power supply. You don't need them as Wemos has a 5V output.
-
-- test it! have some fun!
 
 ![first test](/blog/assets/alien_first_test.png)
 *First test of the infinity mirror effect. Wow!*
