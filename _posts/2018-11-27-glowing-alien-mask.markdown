@@ -24,7 +24,7 @@ You should be able to do the following. There are plenty tutorials on these topi
 All of the parts can be ordered from eBay or AliExpress.
 
 - [alien vector image](https://www.istockphoto.com/vector/sign-of-space-aliens-gm906014358-249808396) (€9)
-- led strip
+- 5V RGB individually addressable LED strip
 - wemos d1 mini (I recommend to order at least two)
 - wemos battery shield
 - 3.7V lithium battery with connector
@@ -60,10 +60,10 @@ First solder headers to the Wemos to make it breadboard-compatible. Then connect
 
 ![wiring diagram](/blog/assets/wemos_led_strip_wiring.png)
 
-There might be 2 extra cables for external power supply. You don't need them as Wemos has a 5V output.
-
 ![first test](/blog/assets/alien_first_test.png)
 *First test of the infinity mirror effect. Wow!*
+
+There might be 2 extra cables for external power supply running from the LED strip. You don't need them as Wemos has a 5V output. Make sure to isolate them though.
 
 ## Choosing Design
 
