@@ -14,6 +14,7 @@ You should be able to do the following. There are plenty tutorials on these topi
 
 - using a breadboard
 - soldering
+- sewing
 - blinking a LED on the Wemos board
 
   > A common pitfall in flashing the Wemos board is not having [drivers for the USB to serial converter](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers).
@@ -24,13 +25,12 @@ All of the parts can be ordered from eBay or AliExpress.
 
 - [alien vector image](https://www.istockphoto.com/vector/sign-of-space-aliens-gm906014358-249808396) (€9)
 - led strip
-- wemos d1 mini
+- wemos d1 mini (I recommend to order at least two)
 - wemos battery shield
-- 3.7V lithium battery
-- battery holder
-- battery connector
-- wire, jumpers
+- 3.7V lithium battery with connector
+- male-male jumper cables
 - bread board
+- bread board compatible 3.3V power supply
 - shrink tubes
 - electric tape?
 - holographic foil or paper
@@ -54,7 +54,11 @@ All of the parts can be ordered from eBay or AliExpress.
 
 - flash Wemos (TODO: link to tutorial)
 - [adafruit neopixel library](https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library-installation)
-- TODO: fritzing scheme
+
+![fritzing scheme](/blog/assets/wemos_led_strip_schema.jpg)
+
+There might be 2 extra cables for external power supply. You don't need them as Wemos has a 5V output.
+
 - test it! have some fun!
 
 ![first test](/blog/assets/alien_first_test.png)
