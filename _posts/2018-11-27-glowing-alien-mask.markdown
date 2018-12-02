@@ -56,14 +56,13 @@ Flash the Wemos using Arduino IDE. Use the [Adafruit Neopixel library](https://g
 
 ## Light Up the LEDs
 
-First solder headers to the Wemos to make it breadboard-compatible. Then connect the LED strip according to the following diagram.
-
+First solder headers to the Wemos to make it breadboard-compatible. Then connect the LED strip according to the following diagram. You can power the Wemos directly through USB to save battery.
 ![wiring diagram](/blog/assets/wemos_led_strip_wiring.png)
 
 ![first test](/blog/assets/alien_first_test.png)
 *First test of the infinity mirror effect. Wow!*
 
-There might be 2 extra cables for external power supply running from the LED strip. You don't need them as Wemos has a 5V output. Make sure to isolate them though.
+There might be 2 extra cables running from the LED strip. They are meant for external power supply. You don't need them as Wemos has a 5V output. Make sure to isolate them though.
 
 ## Choosing Design
 
