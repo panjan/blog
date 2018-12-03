@@ -138,7 +138,4 @@ Sew a flexible strip to the mask and enjoy!
 ![green alien](/blog/assets/alien_green.gif)
 
 ----------
-- glowing mirror effect
-- keep the mask bent
 - why wemos - can be powered by 3.7V lipo, supplies 5V to the strip, wifi
-- why arduino ide
