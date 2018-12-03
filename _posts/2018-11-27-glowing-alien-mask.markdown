@@ -6,7 +6,7 @@ date:   2018-11-27 21:46:18 +0100
 
 ![green alien](/blog/assets/alien_green3.gif)
 
-The awesome [Glowing Mirror Mask tutorial](https://learn.adafruit.com/glowing-mirror-mask/introduction) by Adafruit inspired me to make this Halloween mask. The main differences are that I used a cool alien design and cheaper parts. Also the image is printed (not cut into vinyl) which allows us to use any shapes and even colours.
+The awesome [Glowing Mirror Mask tutorial](https://learn.adafruit.com/glowing-mirror-mask/introduction) by Adafruit inspired me to make this Halloween mask. The main differences are that I used a cool alien design and cheaper parts. Also the image is printed (not cut into vinyl) which allows us to use any shapes without too much effort.
 
 ## Required Skills
 
@@ -50,7 +50,7 @@ All of the parts can be ordered from eBay or AliExpress.
 
 ## Flashing Wemos
 
-Flash the Wemos using Arduino IDE. Use the [Adafruit Neopixel library](https://github.com/adafruit/Adafruit_NeoPixel) to control the LEDs. Start with [this example](https://github.com/adafruit/Adafruit_NeoPixel/blob/master/examples/strandtest/strandtest.ino).
+Flash the Wemos using Arduino IDE. We'll be using the [Adafruit Neopixel library](https://github.com/adafruit/Adafruit_NeoPixel) to control the LEDs. Start with [this example code](https://github.com/adafruit/Adafruit_NeoPixel/blob/master/examples/strandtest/strandtest.ino).
 
 ## Light Up the LEDs
 
@@ -64,7 +64,7 @@ There might be 2 extra cables running from the LED strip. They are meant for ext
 
 ## Choosing Design
 
-I've chosen [this vector image](https://www.istockphoto.com/vector/sign-of-space-aliens-gm906014358-249808396) because it has wide edges that perfectly hide the LEDs so they don't shine directly in your eyes. The €9 price seems reasonable for the time it saved me. If you're adventurous, make or buy a different design. I used the free SVG editor Inkscape to erase the background.
+Now it's time to choose a design for your mask. I've chosen [this vector image](https://www.istockphoto.com/vector/sign-of-space-aliens-gm906014358-249808396) because it has wide edges that perfectly hide the LEDs so they don't shine directly in your eyes. I used the free SVG editor Inkscape to erase the background. The €9 price seems reasonable for the time it saved me. If you're adventurous, make or buy a different design.
 
 TIP: If you're buying an image, use Google image search to see if there's a better deal on another site.
 
@@ -75,7 +75,7 @@ Print the mask on an A4 transparent self-adhesive foil. You can do this at home 
 ![alien printed on transparency foil](/blog/assets/alien_foil.jpeg)
 *This is how the image looks printed on a transparency foil.*
 
-Stick the transparency foil to the one-way mirror foil. First peel the thin strip on the edge of the transparency foil. Align it with the edge of your one-way mirror foil. Carefully peel the rest of the sticker while TODO: vyhlazovani bublinek.
+Stick the transparency foil to the one-way mirror foil. First peel the thin strip on the edge of the transparency foil. Align it with the edge of your mirror foil. Continuously peel the rest of the sticker and apply pressure to avoid air bubbles.
 
 Use a utility knife to cut out the mask.
 
@@ -86,21 +86,21 @@ Use a utility knife to cut out the mask.
 
 Use the front layer as a template to cut out the felt and holographic foil layers. Keep the felt left-overs. You'll use them to cover the Wemos board later.
 
-- make the front layer slightly wider so that it bends better
-
 ![holographic foil and felt](/blog/assets/alien_holographic_felt.jpeg)
 
 Use your hot glue gun to glue the two layers together.
 
+I found out that the front layer should be slightly wider than the back layer. The mask is going to be bent and the front layer would be stretched if we didn't make it wider. Cut off the edges of the back layer based on how much you're going to bend the mask.
+
 ## Cut Out Holes for Eyes
 
-I cut out the holes above the "eyebrows" of the alien. I was afraid that the holes would look bad so I made them quite small. It doesn't look bad at all and I should have made them bigger as  it's quite hard to see with the mask on.
+I cut out the holes above the "eyebrows" of the alien. I was afraid that the holes would look bad so I made them quite small. It doesn't look bad at all and I should have made them bigger as it's quite hard to see with the mask on.
 
 ## Attaching the LED Strip
 
-Sew the LED strip to the edge of the back layer. Leave a small margin between the LED strip and the edge so that the LED strip doesn't slide off of the back layer.
+Use tape to keep the mask bent. Sew the LED strip to the edge of the back layer. Leave a small margin between the LED strip and the edge so that the LED strip doesn't slide off of the back layer.
 
-When you're about to close the loop, cut off the excess of the LED strip using scissors (TODO: link to LED strip cuttin tutorial). Cut a hole for the connector and pull it through. Use jumper cables to connect your Wemos and check that everything is still working.
+When you're about to close the loop, cut off the excess of the LED strip using scissors. Make sure you cut the strip exactly in the marked area. Cut a hole for the connector and pull it through. Use jumper cables to connect your Wemos and check that everything is still working.
 
 ![led strip test](/blog/assets/alien_led_strip_test.jpeg)
 *LED strip attached to the back layer*
@@ -128,7 +128,7 @@ Solder connections according to the Fritzing scheme. Strengthen the connections 
 
 ## Final Touches
 
-Cover the Wemos with some felt (use hot glue gun). Allow for access to the micro USB port.
+Cover the Wemos with the left-over felt. Use hot glue gun to attach it. Allow for access to the USB port.
 
 ![wemos covered with felt](/blog/assets/alien_wemos_covered.jpeg)
 
@@ -137,7 +137,6 @@ Sew a flexible strip to the mask and enjoy!
 ![green alien](/blog/assets/alien_green.gif)
 
 ----------
-- prototyping and coding
 - glowing mirror effect
 - keep the mask bent
 - why wemos - can be powered by 3.7V lipo, supplies 5V to the strip, wifi
