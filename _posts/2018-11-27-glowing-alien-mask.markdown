@@ -119,13 +119,13 @@ Glue the front layer to the LED strip using silicone glue. Use tape to hold ever
 
 ## Connecting the Board
 
-Solder connections according to the Fritzing scheme. Strengthen the connections using a hot glue gun. Sew Wemos to the inside of the mask. Isolate the unused power cables.
+Solder cables according to the Fritzing diagram. Strengthen the connections using a hot glue gun. Sew Wemos to the inside of the mask. Isolate the unused power cables.
 
 ![wemos connected](/blog/assets/alien_wemos.jpeg)
 
 ## Battery Holder and Charging
 
-- TODO
+You're going to charge the battery using the Wemos battery shield. Make sure you don't connect the battery the other way around, otherwise you'll burn the board and see the [magic blue smoke](https://en.wikipedia.org/wiki/Magic_smoke).
 
 ## Final Touches
 
