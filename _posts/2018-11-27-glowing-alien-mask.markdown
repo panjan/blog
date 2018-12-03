@@ -6,7 +6,7 @@ date:   2018-11-27 21:46:18 +0100
 
 ![green alien](/blog/assets/alien_green3.gif)
 
-The awesome [Glowing Mirror Mask tutorial](https://learn.adafruit.com/glowing-mirror-mask/introduction) by Adafruit inspired me to make this Halloween mask. The main differences are that I used a cool alien design and cheaper parts. Also the image is printed (not cut into vinyl) which allows us to use any shapes without too much effort.
+The awesome [Glowing Mirror Mask tutorial](https://learn.adafruit.com/glowing-mirror-mask/introduction) by Adafruit inspired me to make this Halloween mask. It still makes use of the [infinity mirror efect](https://en.wikipedia.org/wiki/Infinity_mirror). The main differences are that I used a cool alien design and cheaper parts. Also the design is printed (not cut into vinyl) which allows us to use any shapes without too much effort.
 
 ## Required Skills
 
@@ -55,6 +55,7 @@ Flash the Wemos using Arduino IDE. We'll be using the [Adafruit Neopixel library
 ## Light Up the LEDs
 
 First solder headers to the Wemos to make it breadboard-compatible. Then connect the LED strip according to the following diagram. You can power the Wemos directly through USB to save battery.
+
 ![wiring diagram](/blog/assets/wemos_led_strip_wiring.png)
 
 ![first test](/blog/assets/alien_first_test.png)
