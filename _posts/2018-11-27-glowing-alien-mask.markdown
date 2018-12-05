@@ -136,6 +136,3 @@ Cover the Wemos with the left-over felt. Use hot glue gun to attach it. Allow fo
 Sew a flexible strip to the mask and enjoy!
 
 ![green alien](/blog/assets/alien_green.gif)
-
-----------
-- why wemos - can be powered by 3.7V lipo, supplies 5V to the strip, wifi
