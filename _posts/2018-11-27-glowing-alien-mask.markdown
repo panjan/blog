@@ -6,11 +6,11 @@ date:   2018-11-27 21:46:18 +0100
 
 ![green alien](/blog/assets/alien_green3.gif)
 
-The awesome [Glowing Mirror Mask tutorial](https://learn.adafruit.com/glowing-mirror-mask/introduction) by Adafruit inspired me to make this Halloween mask. It still makes use of the [infinity mirror efect](https://en.wikipedia.org/wiki/Infinity_mirror). The main differences are that I used a cool alien design and cheaper parts. Also the design is printed (not cut into vinyl) which allows us to use any shapes without too much effort.
+The awesome [Glowing Mirror Mask tutorial](https://learn.adafruit.com/glowing-mirror-mask/introduction) by Adafruit inspired me to make this Halloween mask. It still makes use of the [infinity mirror efect](https://en.wikipedia.org/wiki/Infinity_mirror). The main differences are that I used a cool alien design and cheaper parts. Also, the design is printed (not cut into vinyl) which allows us to use any shapes without too much effort.
 
 ## Required Skills
 
-You should be able to do the following. There are plenty tutorials on these topics.
+You should be able to do the following. There are plenty of tutorials on these topics.
 
 - using a breadboard
 - soldering
@@ -25,11 +25,11 @@ All of the parts can be ordered from eBay or AliExpress.
 
 - [alien vector image](https://www.istockphoto.com/vector/sign-of-space-aliens-gm906014358-249808396) (€9)
 - 5V RGB individually addressable LED strip
-- wemos d1 mini (I recommend to order at least two)
-- wemos battery shield
-- 3.7V lithium battery with connector
+- Wemos D1 Mini (I recommend to order at least two)
+- Wemos battery shield
+- 3.7V lithium battery with a connector
 - male-male jumper cables
-- bread board
+- breadboard
 - shrink tubes
 - holographic foil or paper
 - one-way mirror foil
@@ -54,7 +54,7 @@ Flash the Wemos using Arduino IDE. We'll be using the [Adafruit Neopixel library
 
 ## Light Up the LEDs
 
-First solder headers to the Wemos to make it breadboard-compatible. Then connect the LED strip according to the following diagram. You can power the Wemos directly through USB to save battery.
+First, solder headers to the Wemos to make it breadboard-compatible. Then connect the LED strip according to the following diagram. You can power the Wemos directly through USB to save battery.
 
 ![wiring diagram](/blog/assets/wemos_led_strip_wiring.png)
 
@@ -71,12 +71,12 @@ TIP: If you're buying an image, use Google image search to see if there's a bett
 
 ## Making the Front Layer
 
-Print the mask on an A4 transparent self-adhesive foil. You can do this at home if you have a suitable printer and transparency foil. I had it done at a local copy centre. Make sure you crop the image as much as possible so that there are no margins on the sides. For an adult-sized mask the A4 format is just wide enough. First try printing the image on an ordinary paper if you don't want to risk wasting a transparency foil.
+Print the mask on an A4 transparent self-adhesive foil. You can do this at home if you have a suitable printer and transparency foil. I had it done at a local copy centre. Make sure you crop the image as much as possible so that there are no margins on the sides. For an adult-sized mask, the A4 format is just wide enough. First, try printing the image on an ordinary paper if you don't want to risk wasting a transparency foil.
 
 ![alien printed on transparency foil](/blog/assets/alien_foil.jpeg)
 *This is how the image looks printed on a transparency foil.*
 
-Stick the transparency foil to the one-way mirror foil. First peel the thin strip on the edge of the transparency foil. Align it with the edge of your mirror foil. Continuously peel the rest of the sticker and apply pressure to avoid air bubbles.
+Stick the transparency foil to the one-way mirror foil. First, peel the thin strip on the edge of the transparency foil. Align it with the edge of your mirror foil. Continuously peel the rest of the sticker and apply pressure to avoid air bubbles.
 
 Use a utility knife to cut out the mask.
 
