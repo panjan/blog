@@ -67,7 +67,7 @@ There might be 2 extra cables running from the LED strip. They are meant for ext
 
 Now it's time to choose a design for your mask. I've chosen [this vector image](https://www.istockphoto.com/vector/sign-of-space-aliens-gm906014358-249808396) because it has wide edges that perfectly hide the LEDs so they don't shine directly in your eyes. I used the free SVG editor [Inkscape](https://inkscape.org/) to erase the background. The €9 price seems reasonable for the time it saved me. If you're adventurous, make or buy a different design.
 
-TIP: If you're buying an image, use Google image search to see if there's a better deal on another site.
+> If you're buying an image, use Google image search to see if there's a better deal on another site.
 
 ## Making the Front Layer
 
