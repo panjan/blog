@@ -97,7 +97,7 @@ I found out that the front layer should be slightly wider than the back layer. T
 
 ## Cut Out Holes for Eyes
 
-I cut out the holes above the "eyebrows" of the alien. I was afraid that the holes would look bad so I made them quite small. It doesn't look bad at all and I should have made them bigger as it's quite hard to see with the mask on.
+Cut holes for eyes through both the front and back layer. I've cut them above the "eyebrows" of the alien. I was afraid that the holes would look bad so I made them quite small. It doesn't look bad at all and I should have made them bigger as it's quite hard to see with the mask on.
 
 ## Attaching the LED Strip
 
