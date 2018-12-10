@@ -13,6 +13,7 @@ input, textarea, button {
   background: $background-color;
   border: 1px solid $text-color;
   border-radius: 4px;
+  font-size: $base-font-size;
 }
 
 hr {
@@ -64,7 +65,7 @@ main {
  * Images
  */
 img {
-  max-width: 100%;
+  width: 100%;
   vertical-align: middle;
 }
 
