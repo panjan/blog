@@ -48,7 +48,9 @@ All of the parts can be ordered from eBay or AliExpress.
 
 > Before you start with this project make sure you understand the risks of working with electronics and lithium batteries (they blow up if shorted!). The mask is not waterproof.
 
-## Flashing Wemos
+## Flashing Wemos D1 Mini
+
+We'll be using the Wemos D1 Mini board for controlling the LEDs. I use this board for nearly every project because it has a WIFI chip, mini-USB port and it's very affordable.
 
 Flash the Wemos using Arduino IDE. We'll be using the [Adafruit Neopixel library](https://github.com/adafruit/Adafruit_NeoPixel) to control the LEDs. Start with [this example code](https://github.com/adafruit/Adafruit_NeoPixel/blob/master/examples/strandtest/strandtest.ino).
 
