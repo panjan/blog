@@ -8,17 +8,6 @@ date:   2018-11-27 21:46:18 +0100
 
 The awesome [Glowing Mirror Mask tutorial](https://learn.adafruit.com/glowing-mirror-mask/introduction) by Adafruit inspired me to make this Halloween mask. It still makes use of the [infinity mirror efect](https://en.wikipedia.org/wiki/Infinity_mirror). The main differences are that I used a cool alien design and cheaper parts. Also, the design is printed (not cut into vinyl) which allows us to use any shapes without too much effort.
 
-## Required Skills
-
-You should be able to do the following. There are plenty of tutorials on these topics.
-
-- using a breadboard
-- soldering
-- sewing
-- programming the Wemos board using Arduino IDE (at least blink a led)
-
-  > A common pitfall in flashing the Wemos board is not having [drivers for the USB to serial converter](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers).
-
 ## Parts and Materials
 
 All of the parts can be ordered from eBay or AliExpress.
@@ -36,6 +25,17 @@ All of the parts can be ordered from eBay or AliExpress.
 - silicone glue
 - craft felt
 - flexible strip
+
+## Required Skills
+
+You should have the listed skills. There are plenty of tutorials on these topics so you can do this project without prior experience but don't expect it to be a weekend project then.
+
+- using a breadboard
+- soldering
+- sewing
+- programming the Wemos board using Arduino IDE (at least blink a led)
+
+  > A common pitfall in flashing the Wemos board is not having [drivers for the USB to serial converter](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers).
 
 ## Tools
 
