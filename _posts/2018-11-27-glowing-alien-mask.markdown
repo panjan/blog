@@ -139,4 +139,4 @@ Sew a flexible strip to the mask and enjoy!
 
 ![green alien](/blog/assets/alien_green.gif)
 
-The next step might be building a web client for the mask. It's perfectly possible with the Wemos D1 Mini board and it would be cool to switch effects using a phone. Maybe next year. 🎃
+The next step might be building a web client for switching effects. It's perfectly possible with the Wemos D1 Mini board and it would be cool to control the mask using a phone. Maybe next year. 🎃
