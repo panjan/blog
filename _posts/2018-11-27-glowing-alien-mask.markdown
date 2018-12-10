@@ -52,7 +52,7 @@ You should have the listed skills. There are plenty of tutorials on these topics
 
 We'll be using the Wemos D1 Mini board for controlling the LEDs. I use this board for nearly every project because it has a WIFI chip, mini-USB port and it's very affordable.
 
-Flash the Wemos using Arduino IDE. We'll be using the [Adafruit Neopixel library](https://github.com/adafruit/Adafruit_NeoPixel) to control the LEDs. Start with [this example code](https://github.com/adafruit/Adafruit_NeoPixel/blob/master/examples/strandtest/strandtest.ino).
+Flash the Wemos using Arduino IDE. We'll be using the [Adafruit Neopixel library](https://github.com/adafruit/Adafruit_NeoPixel) to control the LEDs. Start with [this example code](https://github.com/adafruit/Adafruit_NeoPixel/blob/master/examples/strandtest/strandtest.ino) which loops between different effects. Make sure you edit the pin number and number of pixels in the strip.
 
 ## Light Up the LEDs
 
