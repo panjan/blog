@@ -104,7 +104,7 @@ Cut holes for eyes through both the front and back layer. I've cut them above th
 
 ## Attaching the LED Strip
 
-Use tape to keep the mask bent. Sew the LED strip to the edge of the back layer. Leave a small margin between the LED strip and the edge so that the LED strip doesn't slide off of the back layer.
+Use tape to keep the mask bent. Sew the LED strip to the edge of the back layer. Leave a small margin between the LED strip and the edge so that the LED strip doesn't slide off the back layer.
 
 When you're about to close the loop, cut off the excess of the LED strip using scissors. Make sure you cut the strip exactly in the marked area. Cut a hole for the connector and pull it through. Use jumper cables to connect your Wemos and check that everything is still working.
 
