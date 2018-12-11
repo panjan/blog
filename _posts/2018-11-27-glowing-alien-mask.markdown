@@ -28,14 +28,14 @@ All of the parts can be ordered from eBay or AliExpress.
 
 ## Required Skills
 
-You should have the listed skills. There are plenty of tutorials on these topics so you can do this project without prior experience but don't expect it to be a weekend project then.
+You should have these skills:
 
 - using a breadboard
 - soldering
 - sewing
 - programming the Wemos board using Arduino IDE (at least blink a led)
 
-  > A common pitfall in flashing the Wemos board is not having [drivers for the USB to serial converter](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers).
+There are plenty of tutorials on these topics. You can do this project without prior experience but don't expect it to be a weekend project then.
 
 ## Tools
 
@@ -45,14 +45,17 @@ You should have the listed skills. There are plenty of tutorials on these topics
 - soldering iron
 - utility knife
 - wire cutter
+- scissors
 
 > Before you start with this project make sure you understand the risks of working with electronics and lithium batteries (they blow up if shorted!). The mask is not waterproof.
 
 ## Flashing Wemos D1 Mini
 
-We'll be using the Wemos D1 Mini board for controlling the LEDs. I use this board for nearly every project because it has a WIFI chip, mini-USB port and it's very affordable.
+We'll be using the Wemos D1 Mini board for controlling the LEDs. I use this board for nearly every electronics project because it has a WIFI chip, mini-USB port and it's very affordable.
 
 Flash the Wemos using Arduino IDE. We'll be using the [Adafruit Neopixel library](https://github.com/adafruit/Adafruit_NeoPixel) to control the LEDs. Start with [this example code](https://github.com/adafruit/Adafruit_NeoPixel/blob/master/examples/strandtest/strandtest.ino) which loops between different effects. Make sure you edit the pin number and number of pixels in the strip.
+
+> A common pitfall in flashing the Wemos board is not having [drivers for the USB to serial converter](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers).
 
 ## Light Up the LEDs
 
@@ -69,7 +72,7 @@ There might be 2 extra cables running from the LED strip. They are meant for ext
 
 Now it's time to choose a design for your mask. I've chosen [this vector image](https://www.istockphoto.com/vector/sign-of-space-aliens-gm906014358-249808396) because it has wide edges that perfectly hide the LEDs so they don't shine directly in your eyes. I used the free SVG editor [Inkscape](https://inkscape.org/) to erase the background. The €9 price seems reasonable for the time it saved me. If you're adventurous, make or buy a different design.
 
-> If you're buying an image, use Google image search to see if there's a better deal on another site.
+> If you're buying an image, use [Google image search](https://support.google.com/websearch/answer/1325808?hl=en) to see if there's a better deal on another site.
 
 ## Making the Front Layer
 
@@ -83,7 +86,7 @@ Stick the transparency foil to the one-way mirror foil. First, peel the thin str
 Use a utility knife to cut out the mask.
 
 ![transparency foil on one-way mirror foil](/blog/assets/alien_foil_cut.jpeg)
-*Transparency foil on a one-way mirror foil.*
+*The front layer.*
 
 ## Making the Back Layer
 
@@ -93,11 +96,11 @@ Use the front layer as a template to cut out the felt and holographic foil layer
 
 Use your hot glue gun to glue the two layers together.
 
-I found out that the front layer should be slightly wider than the back layer. The mask is going to be bent and the front layer would be stretched if we didn't make it wider. Cut off the edges of the back layer based on how much you're going to bend the mask.
+I found out that the front layer should be slightly bigger than the back layer. The mask is going to be bent and the front layer would be stretched if we didn't make it bigger. Cut off the edges of the back layer based on how much you're going to bend the mask.
 
 ## Cut Out Holes for Eyes
 
-Cut holes for eyes through both the front and back layer. I've cut them above the "eyebrows" of the alien. I was afraid that the holes would look bad so I made them quite small. It doesn't look bad at all and I should have made them bigger as it's quite hard to see with the mask on.
+Cut holes for eyes through both the front and back layer. I've cut them above the "eyebrows" of the alien. I was afraid that the holes would look bad so I made them quite small. It doesn't look bad at all and I should have made them bigger as it's quite hard to see with the mask on. Make sure you can see clearly through the mask even when it's dark.
 
 ## Attaching the LED Strip
 
@@ -106,7 +109,7 @@ Use tape to keep the mask bent. Sew the LED strip to the edge of the back layer.
 When you're about to close the loop, cut off the excess of the LED strip using scissors. Make sure you cut the strip exactly in the marked area. Cut a hole for the connector and pull it through. Use jumper cables to connect your Wemos and check that everything is still working.
 
 ![led strip test](/blog/assets/alien_led_strip_test.jpeg)
-*LED strip attached to the back layer*
+*LED strip attached to the back layer.*
 
 Isolate the end of the LED strip using a shrink tube. Squeeze the end with pliers as in the picture below.
 
@@ -121,7 +124,7 @@ Glue the front layer to the LED strip using silicone glue. Use tape to hold ever
 
 ## Connecting the Board
 
-Solder cables according to the Fritzing diagram. Strengthen the connections using a hot glue gun. Sew Wemos to the inside of the mask. Isolate the unused power cables.
+Solder cables according to the wiring diagram. Strengthen the connections using a hot glue gun. Sew Wemos to the inside of the mask. Isolate the unused power cables if there are any.
 
 ![wemos connected](/blog/assets/alien_wemos.jpeg)
 
