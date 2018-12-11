@@ -4,7 +4,7 @@ title:  "Making a Glowing Alien Mask"
 date:   2018-11-27 21:46:18 +0100
 ---
 
-![green alien](/blog/assets/alien_green3.gif)
+![green alien](/assets/alien_green3.gif)
 
 The awesome [Glowing Mirror Mask tutorial](https://learn.adafruit.com/glowing-mirror-mask/introduction) by Adafruit inspired me to make this Halloween mask. It still makes use of the [infinity mirror efect](https://en.wikipedia.org/wiki/Infinity_mirror). The main differences are that I used a cool alien design and cheaper parts. Also, the design is printed (not cut into vinyl) which allows us to use any shapes without too much effort.
 
@@ -61,9 +61,9 @@ Flash the Wemos using Arduino IDE. We'll be using the [Adafruit Neopixel library
 
 First, solder headers to the Wemos to make it breadboard-compatible. Then connect the LED strip according to the following diagram. You can power the Wemos directly through USB to save battery.
 
-![wiring diagram](/blog/assets/wemos_led_strip_wiring.png)
+![wiring diagram](/assets/wemos_led_strip_wiring.png)
 
-![first test](/blog/assets/alien_first_test.png)
+![first test](/assets/alien_first_test.png)
 *First test of the infinity mirror effect. Wow!*
 
 There might be 2 extra cables running from the LED strip. They are meant for external power supply. You don't need them as Wemos has a 5V output. Make sure to isolate them though.
@@ -78,21 +78,21 @@ Now it's time to choose a design for your mask. I've chosen [this vector image](
 
 Print the mask on an A4 transparent self-adhesive foil. You can do this at home if you have a suitable printer and transparency foil. I had it done at a local copy centre. Make sure you crop the image as much as possible so that there are no margins on the sides. For an adult-sized mask, the A4 format is just wide enough. First, try printing the image on an ordinary paper if you don't want to risk wasting a transparency foil.
 
-![alien printed on transparency foil](/blog/assets/alien_foil.jpeg)
+![alien printed on transparency foil](/assets/alien_foil.jpeg)
 *This is how the image looks printed on a transparency foil.*
 
 Stick the transparency foil to the one-way mirror foil. First, peel the thin strip on the edge of the transparency foil. Align it with the edge of your mirror foil. Continuously peel the rest of the sticker and apply pressure to avoid air bubbles.
 
 Use a utility knife to cut out the mask.
 
-![transparency foil on one-way mirror foil](/blog/assets/alien_foil_cut.jpeg)
+![transparency foil on one-way mirror foil](/assets/alien_foil_cut.jpeg)
 *The front layer.*
 
 ## Making the Back Layer
 
 Use the front layer as a template to cut out the felt and holographic foil layers. Keep the felt left-overs. You'll use them to cover the Wemos board later.
 
-![holographic foil and felt](/blog/assets/alien_holographic_felt.jpeg)
+![holographic foil and felt](/assets/alien_holographic_felt.jpeg)
 
 Use your hot glue gun to glue the two layers together.
 
@@ -108,25 +108,25 @@ Use tape to keep the mask bent. Sew the LED strip to the edge of the back layer.
 
 When you're about to close the loop, cut off the excess of the LED strip using scissors. Make sure you cut the strip exactly in the marked area. Cut a hole for the connector and pull it through. Use jumper cables to connect your Wemos and check that everything is still working.
 
-![led strip test](/blog/assets/alien_led_strip_test.jpeg)
+![led strip test](/assets/alien_led_strip_test.jpeg)
 *LED strip attached to the back layer.*
 
 Isolate the end of the LED strip using a shrink tube. Squeeze the end with pliers as in the picture below.
 
-![led strip isolation](/blog/assets/alien_led_strip_ending.jpeg)
+![led strip isolation](/assets/alien_led_strip_ending.jpeg)
 
 ## Attaching the Front Layer
 
 Glue the front layer to the LED strip using silicone glue. Use tape to hold everything together. Wait until the next day to let the glue dry completely.
 
-![glueing front layer](/blog/assets/alien_silicone_glue.jpeg)
+![glueing front layer](/assets/alien_silicone_glue.jpeg)
 *You can see tape holding the mask together while the silicon glue dries.*
 
 ## Connecting the Board
 
 Solder cables according to the wiring diagram. Strengthen the connections using a hot glue gun. Sew Wemos to the inside of the mask. Isolate the unused power cables if there are any.
 
-![wemos connected](/blog/assets/alien_wemos.jpeg)
+![wemos connected](/assets/alien_wemos.jpeg)
 
 ## Charging the Battery
 
@@ -136,10 +136,10 @@ You're going to charge the battery using the Wemos battery shield. Make sure you
 
 Cover the Wemos with the left-over felt. Use hot glue gun to attach it. Allow for access to the USB port.
 
-![wemos covered with felt](/blog/assets/alien_wemos_covered.jpeg)
+![wemos covered with felt](/assets/alien_wemos_covered.jpeg)
 
 Sew a flexible strip to the mask and enjoy!
 
-![green alien](/blog/assets/alien_green.gif)
+![green alien](/assets/alien_green.gif)
 
 The next step might be building a web client for switching effects. It's perfectly possible with the Wemos D1 Mini board and it would be cool to control the mask using a phone. Maybe next year. 🎃
