@@ -77,12 +77,12 @@ Now it's time to choose a design for your mask. I've chosen [this vector image](
 
 ## Making the Front Layer
 
-Print the mask on an A4 transparent self-adhesive foil. You can do this at home if you have a suitable printer and transparency foil. I had it done at a local copy centre. Make sure you crop the image as much as possible so that there are no margins on the sides. For an adult-sized mask, the A4 format is just wide enough. First, try printing the image on an ordinary paper if you don't want to risk wasting a transparency foil.
+Print the mask on an A4 transparent self-adhesive foil. You can do this at home if you have a suitable printer and transparency foil. I had it done at a local copy centre. For an adult-sized mask, the A4 format is just wide enough. Make sure you crop the image as much as possible so that there are no margins on the sides. First, try printing the image on an ordinary paper if you don't want to risk wasting a transparency foil.
 
 ![alien printed on transparency foil](/assets/alien_foil.jpeg)
 *This is how the image looks printed on a transparency foil.*
 
-Stick the transparency foil to the one-way mirror foil. First, peel the thin strip on the edge of the transparency foil. Align it with the edge of your mirror foil. Continuously peel the rest of the sticker and apply pressure to avoid air bubbles.
+Stick the transparency foil to the one-way mirror foil. First, peel the thin strip on the edge of the transparency foil. Align the two layers and carefully peel the rest of the sticker. Continuously apply pressure to avoid air bubbles.
 
 Use a utility knife to cut out the mask.
 
