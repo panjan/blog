@@ -39,10 +39,10 @@ There are plenty of tutorials on these topics. You can learn these skills as you
 
 ## Tools
 
+- soldering iron
 - hot air gun, hair drier or lighter (for shrink tubes)
 - hot glue gun
 - needle and thread
-- soldering iron
 - utility knife
 - wire cutter
 - scissors
