@@ -87,7 +87,7 @@ Stick the transparency foil to the one-way mirror foil. First, peel the thin str
 Use a utility knife to cut out the mask.
 
 ![transparency foil on one-way mirror foil](/assets/alien_foil_cut.jpeg)
-*The front layer.*
+*The front layer is ready.*
 
 ## Making the Back Layer
 
@@ -97,7 +97,7 @@ Use the front layer as a template to cut out the felt and holographic foil layer
 
 Use your hot glue gun to glue the two layers together.
 
-I found out that the front layer should be slightly bigger than the back layer. The mask is going to be bent and the front layer would be stretched if we didn't make it bigger. Cut off the edges of the back layer based on how much you're going to bend the mask.
+I found out that the front layer should be slightly bigger than the back layer. The mask is going to be bent and the front layer would be stretched if we didn't make it bigger. Trim the edges of the back layer based on how much you're going to bend the mask.
 
 ## Cut Out Holes for Eyes
 
@@ -115,6 +115,7 @@ When you're about to close the loop, cut off the excess of the LED strip using s
 Isolate the end of the LED strip using a shrink tube. Squeeze the end with pliers as in the picture below.
 
 ![led strip isolation](/assets/alien_led_strip_ending.jpeg)
+*Isolated end of the LED strip.*
 
 ## Attaching the Front Layer
 
@@ -128,6 +129,7 @@ Glue the front layer to the LED strip using silicone glue. Use tape to hold ever
 Solder cables according to the wiring diagram. Strengthen the connections using a hot glue gun. Don't apply the glue to the board like in the picture (silly me), but rather glue the cables to the mask. That will relieve stress from the connections even better. Sew Wemos to the inside of the mask. Isolate the unused LED strip power cables if there are any.
 
 ![wemos connected](/assets/alien_wemos.jpeg)
+*The Wemos board connected and sewn to the mask.*
 
 ## Charging the Battery
 
