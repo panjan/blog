@@ -126,7 +126,7 @@ Glue the front layer to the LED strip using silicone glue. Use tape to hold ever
 
 ## Connecting the Board
 
-Solder cables according to the wiring diagram. Strengthen the connections using a hot glue gun. Don't apply the glue to the board like in the picture (silly me), but rather glue the cables to the mask. That will relieve stress from the connections even better. Sew Wemos to the inside of the mask. Isolate the unused LED strip power cables if there are any.
+Solder cables according to the wiring diagram. Strengthen the connections using a hot glue gun. Don't apply the glue to the board like in the picture (silly me), but rather glue the cables to the mask. This will relieve stress from the connections even better. Sew Wemos to the inside of the mask. Isolate the unused LED strip power cables if there are any.
 
 ![wemos connected](/assets/alien_wemos.jpeg)
 *The Wemos board connected and sewn to the mask.*
