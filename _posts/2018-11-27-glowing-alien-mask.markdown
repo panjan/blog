@@ -35,7 +35,7 @@ You should have these skills:
 - sewing
 - programming the Wemos board using Arduino IDE (at least blink a led)
 
-There are plenty of tutorials on these topics. You can do this project without prior experience but don't expect it to be a weekend project then.
+There are plenty of tutorials on these topics. You can learn these skills as you go but expect the project to take more than one weekend.
 
 ## Tools
 
