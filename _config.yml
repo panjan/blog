@@ -26,7 +26,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
-google_analytics: UA-86107022-1
+google_analytics: UA-130954250-1
 show_excerpts: true
 
 # Exclude from processing.
