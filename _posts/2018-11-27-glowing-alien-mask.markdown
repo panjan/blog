@@ -25,6 +25,7 @@ All of the parts can be ordered from eBay or AliExpress.
 - silicone glue
 - craft felt
 - flexible strip
+- adhesive tape
 
 ## Required Skills
 
@@ -100,7 +101,7 @@ I found out that the front layer should be slightly bigger than the back layer. 
 
 ## Cut Out Holes for Eyes
 
-Cut holes for eyes through both the front and back layer. I've cut them above the "eyebrows" of the alien. I was afraid that the holes would look bad so I made them quite small. It doesn't look bad at all and I should have made them bigger as it's quite hard to see with the mask on. Make sure you can see clearly through the mask even when it's dark.
+Cut holes for eyes through both the front and back layer. I've cut them above the "eyebrows" of the alien. I was afraid that the holes would look bad so I made them quite small. It doesn't look bad at all and I should have made them bigger as it's quite hard to see with the mask on. Make sure you can see clearly through the mask.
 
 ## Attaching the LED Strip
 
