@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Making a Glowing Alien Mask"
+title:  "Making a Glowing Alien Mirror Mask"
 date:   2018-11-27 21:46:18 +0100
 ---
 
 ![green alien](/assets/alien_green3.gif)
 
-The awesome [Glowing Mirror Mask tutorial](https://learn.adafruit.com/glowing-mirror-mask/introduction) by Adafruit inspired me to make this Halloween mask. It still makes use of the [infinity mirror efect](https://en.wikipedia.org/wiki/Infinity_mirror). The main differences are that I used a cool alien design and cheaper parts. Also, the design is printed (not cut into vinyl) which allows us to use any shapes without too much effort.
+The awesome [Glowing Mirror Mask tutorial](https://learn.adafruit.com/glowing-mirror-mask/introduction) by Adafruit inspired me to make this Halloween mask. It still makes use of the [infinity mirror efect](https://en.wikipedia.org/wiki/Infinity_mirror). The main differences are the cool alien design and the fact the it's printed on a transparency foil (not cut into vinyl).
 
 ## Parts and Materials
 
