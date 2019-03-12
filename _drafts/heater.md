@@ -21,13 +21,18 @@ This article will show you how to make your ordinary electric heater smarter and
 - utility knife
 - pencil
 - electric drill
-- needle nose pliers for manipulating cables (optional)
 - screw driver
 - multimeter
+- needle nose pliers for manipulating cables (optional)
+- USB to serial converter and jumpers for flashing the Sonoff (optional)
 
-## Flashing the Sonoff
+## Flashing the Sonoff (optional)
 
-TODO
+This step is optional if you don't need integration with Home Assistant.
+
+Sonoff devices are relatively easy to flash. I've flashed mine with an alternative [firmware called Tasmota](https://github.com/arendst/Sonoff-Tasmota). I wanted something open-source and easy to integrate with Home Assistant. Some soldering and a USB-to-serial converter are required. There are tutorials on flashing the Sonoff available.
+
+> If you decide to flash the firmware, make sure to test the device with the original firmware first.
 
 ## Wiring
 
@@ -57,3 +62,5 @@ Connect the cables according to the diagram and test your connections using a mu
 TODO: photo of the result
 
 ## TODO: Securing the Sonoff
+
+## TODO: Integration with Home Assistant
