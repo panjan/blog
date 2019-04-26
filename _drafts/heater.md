@@ -26,11 +26,11 @@ This article will show you how to make your ordinary electric heater smarter and
 - needle nose pliers for manipulating cables (optional)
 - USB to serial converter and jumpers for flashing the Sonoff (optional)
 
-## Flashing the Sonoff (optional)
+## Flashing the Sonoff
 
 This step is optional if you don't need integration with Home Assistant.
 
-Sonoff devices are relatively easy to flash. I've flashed mine with an alternative [firmware called Tasmota](https://github.com/arendst/Sonoff-Tasmota). I wanted something open-source and easy to integrate with Home Assistant. Some soldering and a USB-to-serial converter are required. There are tutorials on flashing the Sonoff available.
+Sonoff devices are relatively easy to flash. I've flashed mine with an alternative [firmware called Sonoff Tasmota](https://github.com/arendst/Sonoff-Tasmota). I wanted something open-source and easy to integrate with Home Assistant. Some soldering and a USB-to-serial converter are required. There are tutorials on flashing the Sonoff available.
 
 > If you decide to flash the firmware, make sure to test the device with the original firmware first.
 
@@ -61,6 +61,25 @@ Connect the cables according to the diagram and test your connections using a mu
 
 TODO: photo of the result
 
-## TODO: Securing the Sonoff
+## Integration with Home Assistant
 
-## TODO: Integration with Home Assistant
+![HASS switches](/assets/heating/heating_switches.png)
+
+#### Securing Sonoff Tasmota
+
+Sonoff Tasmota is incredibly easy to setup but the default settings are rather insecure. W     - vypnout http api a nechat jen mqtt
+    - cmnd/sonoff3/WebPassword
+    - disable access point mode
+        - cmnd/sonoff3/WifiConfig 5 (znamena Wait)
+    - mqtt zaheslovat
+    - mqtt ssl?
+
+#### Setting the Retain Flag
+    - cmnd/sonoff3/ButtonTopic 1
+    - cmnd/sonoff3/ButtonRetain 1
+    - popsano zde:
+        - https://github.com/arendst/Sonoff-Tasmota/wiki/MQTT-Features
+        - https://github.com/arendst/Sonoff-Tasmota/wiki/Commands
+    - toto ma chybu, ze kdyz neni pripojeni na mosquitto, tak tlacitko sice funguje, ale jakmile se znovu pripoji, tak se prepne do retained stavu
+        - alespon blika modra ledka, kdyz je pripojeni dole
+    - HA -> retain: truek
