@@ -5,7 +5,7 @@ title:  "Making Your Electric Heater Smarter"
 
 ![smart heating](/assets/heating/heating.jpg)
 
-This article will show you how to make your ordinary electric heater smarter. You'll be able to set timers, control it with your phone, Alexa and Google Home. Finally, we'll integrate it to the home automation hub [Home Assistant](https://www.home-assistant.io/).
+This article will show you how to make your ordinary electric heater smarter. You'll be able to set timers, control it with your phone, Alexa and Google Home. Finally, we'll integrate it to the home automation hub [Home Assistant](https://www.home-assistant.io/). No more getting up when you feel cosy and want to turn on the heating!
 
 ## Parts and Materials
 
@@ -84,11 +84,17 @@ switch:
     name: "Bedroom Heating"
     state_topic: "stat/sonoff1/POWER"
     command_topic: "cmnd/sonoff1/POWER"
-    payload_on: "ON"
-    payload_off: "OFF"
+    payload_on: "ON" # TODO: default?
+    payload_off: "OFF" # TODO: default?
     retain: true
     optimistic: true
 ```
+
+#### Dealing with Power Outages Using The Retain Flag
+
+My heaters (and boiler) have a special [load control switch](https://en.wikipedia.org/wiki/Demand_response) which turns off the power at certain times. This gives me a cheaper tariff but it also means the Sonoff might not be online when I want flip the switch. To make your MQTT broker "remember the state" of the switch, use the [`retain` flag](https://mosquitto.org/man/mqtt-7.html). It will make the Sonoff get the state from the broker after startup. Note that you need to set the flag for both the subscriber (Sonoff) and the publisher (Home Assistant).
+
+#### Optimistic
 
 #### Securing Sonoff Tasmota
 
