@@ -3,7 +3,7 @@ layout: post
 title:  "Making Your Electric Heater Smarter"
 ---
 
-![smart heating](/assets/heating/heating.jpg)
+![smart heating](/assets/heating/heating_finished.png)
 
 This article will show you how to make your ordinary electric heater smarter. You'll be able to set timers, measure power consumption and control it with your phone, Alexa and Google Home. Finally, we'll integrate it to the home automation hub [Home Assistant](https://www.home-assistant.io/). No more getting up when you feel cosy and want to turn on the heating!
 
@@ -53,9 +53,11 @@ Now drill holes in the wall and screw the Sonoff to it. Measure how much cable y
 
 > Before you continue, turn off the circuit breaker to avoid injuries. Use a multimeter or a tester screwdriver to check that the power is off. There are plenty of tutorials on how to test sockets on YouTube.
 
-Take a picture of the wiring now (and thank me later). Connect the cables according to the diagram on the Sonoff. L stands for line, N is neutral and E is earth ground. In my case, the wires are brown, blue and yellow-green respectively. Be advised that your colours might be off. If in doubt, use a multimeter or a tester screwdriver.
+Take a picture of the original wiring now. You might want to refer to it later.
 
-When you do the wiring, remember you'll need to put on the cap of the Sonoff. It's a tight fit so make sure your cables aren't crossing (TODO: crossing?).
+Connect the cables according to the diagram on the Sonoff. L stands for line, N is neutral and E is earth ground. In my case, the wires are brown, blue and yellow-green respectively. Be advised that your colours might be off. If in doubt, use a multimeter or a tester screwdriver.
+
+Remember you'll need to screw the cover back to the Sonoff. It's a tight fit so make sure your cables aren't crossing (TODO: crossing?).
 
 ![cutting cables](/assets/heating/wiring.png)
 *TODO: make a picture of final wiring*
@@ -66,8 +68,7 @@ TODO: photo of the result
 
 ## Integration with Home Assistant (optional)
 
-
-![home assistant logo](/assets/heating/ha_logo.png)
+<img alt="home assistant logo" src="/assets/heating/ha_logo.png" style="display: block; margin-left: auto; margin-right: auto; vertical-align: middle; width: 25%;"/>
 
 Unlike Google Home and Apple Homekit, Home Assistant is highly customizable, local and open-source. I run my instance on a Raspberry Pi. Pick your hardware and install it according to [these instructions](https://www.home-assistant.io/getting-started/).
 
@@ -79,15 +80,19 @@ To connect Home Assistant to Tasmota, we'll need an [MQTT](https://www.home-assi
 
 You can publish MQTT messages from [Home Assistant](https://www.home-assistant.io/docs/mqtt/service/), from the command line ([mosquitto_pub](https://mosquitto.org/man/mosquitto_pub-1.html)) or using a graphical client ([MQTT.fx](https://mqttfx.jensd.de) works for me on Mac). I'll leave the choice to you.
 
-Subscribe to `stat/sonoff1/RESULT` for command results.
-
 #### Configuring Tasmota
 
-TODO: Tasmota screenshot
+Configure WiFi and MQTT according to [Tasmota's documentation](https://github.com/arendst/Sonoff-Tasmota/wiki/Initial-Configuration).
+
+Set the `topic` setting to `sonoff1`. Your MQTT configuration should look like the following screenshot.
+
+<img alt="mqtt config page" src="/assets/heating/mqtt_config.png" style="display: block; margin-left: auto; margin-right: auto; vertical-align: middle; max-width: 300px"/>
+
+Now you can send commands to Tasmota in the form `cmnd/sonoff1/<command> <parameter>`. Subscribe to `stat/sonoff1/RESULT` for command results. All available commands are [listed here](https://github.com/arendst/Sonoff-Tasmota/wiki/Commands#mqtt).
 
 #### Adding switches to Home Assistant
 
-![HASS switches](/assets/heating/heating_switches.png)
+<img alt="HASS switches" src="/assets/heating/heating_switches.png" style="display: block; margin-left: auto; margin-right: auto; vertical-align: middle; max-width: 400px"/>
 
 Add the following to your `configuration.yaml`.
 
@@ -116,7 +121,7 @@ cmnd/sonoff1/ButtonRetain 1
 
 #### Securing Sonoff Tasmota
 
-Tasmota is incredibly easy to setup but the default settings are rather insecure. We'll tweak them using [Tasmota's MQTT features](https://github.com/arendst/Sonoff-Tasmota/wiki/MQTT-Features). The available commands are [listed here](https://github.com/arendst/Sonoff-Tasmota/wiki/Commands#mqtt).
+Tasmota is incredibly easy to setup but the default settings are rather insecure. We'll tweak them using [Tasmota's MQTT features](https://github.com/arendst/Sonoff-Tasmota/wiki/MQTT-Features).
 
 ##### Secure the Web Server
 
