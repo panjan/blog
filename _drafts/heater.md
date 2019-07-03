@@ -5,17 +5,18 @@ title:  "Making Your Electric Heater Smarter"
 
 ![smart heating](/assets/heating/heating_finished.png)
 
-This article will show you how to make your ordinary electric heater smarter. You'll be able to set timers, measure power consumption and control it with your phone, Alexa and Google Home. Finally, we'll integrate it to the home automation hub [Home Assistant](https://www.home-assistant.io/). No more getting up when you feel cosy and want to turn on the heating!
+This article will show you how to use the €15 power switch [Sonoff Pow](https://www.itead.cc/sonoff-pow-r2.html) to connect your ordinary electric heater to your WiFi. You'll be able to control it with your phone, set timers and measure power consumption. Sonoff also supports Amazon Alexa, Google Assistant and Google Nest. No more getting up when you feel cosy and want to turn on the heating!
 
-All this is possible just with the €15 WiFi power switch [Sonoff Pow](https://www.itead.cc/sonoff-pow-r2.html).
+Optionally, you can integrate your smart heating to the home automation hub [Home Assistant](https://www.home-assistant.io/) as described later.
 
 ## Parts and Materials
 
 - electric heater
-- Sonoff POW
+- [Sonoff POW](https://www.itead.cc/sonoff-pow-r2.html)
+- 1.5mm2 3 core wire (about 0.5m)
 - 1.5mm2 3 core wire (about 0.5m)
 - 2 screws (TODO: size) and wall plugs (for masonry)
-- cable with a plug for testing (optional)
+- cable with a plug for testing
 
 ## Tools
 
@@ -29,6 +30,25 @@ All this is possible just with the €15 WiFi power switch [Sonoff Pow](https://
 - needle nose pliers for manipulating cables (optional)
 - USB to serial converter and jumpers for flashing the Sonoff (optional)
 
+## Check the Power Rating
+
+Before we start, we need to check the power rating of our heater. It must be lower than the one of the Sonoff. Otherwise, we would be risking fire and electrocution. Take a look at the Sonoff. Depending on which Sonoff version you have, it should say something like `Maxload: 250V 16A` on the box. Use a multimeter to check the voltage of your wall outlet. There are plenty of [tutorials on YouTube](https://www.youtube.com/results?search_query=multimeter+wall+outlet). In my country, we should get 230V and I measured 232V. That's within the 250V limit.
+
+Now let's check the current. It must be under 16A. My heater has a sticker on the side which says 3000W. But how do we know how many Amps? Use [the power law `P = IV`](https://en.wikipedia.org/wiki/Electric_power).
+
+```
+I = P/V = 3000W / 230V = 13,04A < 16A
+```
+
+We're within the 16A limit. The last thing we need to calculate to avoid serious danger is wire size. In the [table of wire sizes](https://en.wikipedia.org/wiki/American_wire_gauge) we can see that for our 13A, a 16AWG wire (1.31mm2) is sufficient. However, it is a good practice to use a thicker wire than really needed (15AWG). We Europians will go with 1.5mm2.
+
+If you are unsure about any of the calculations, ask at the shop or call an electrician to help you.
+
+## Test the Sonoff
+
+![sonoff](/assets/heating/sonoff_diagram.png)
+
+
 ## Flashing the Sonoff (optional)
 
 This step is only required if you want integration with [Home Assistant](https://www.home-assistant.io). Homekit and Google Assistant users can skip this as the original firmware supports both.
@@ -41,8 +61,6 @@ Home Assistant doesn't support the original firmware. Luckily, Sonoff devices ar
 
 We are going to connect the Sonoff according to the diagram on the box. For that, we'll need some cables and a hole in the skirting board to run the cables through.
 
-![sonoff](/assets/heating/sonoff_diagram.png)
-
 First, place the Sonoff against the skirting board in the right angle. Mark the hole for the cables and cut it as in the picture below.
 
 ![cutting skirting board](/assets/heating/cutting_skirting_board.png)
@@ -51,7 +69,7 @@ Now drill holes in the wall and screw the Sonoff to it. Measure how much cable y
 
 ![cutting cables](/assets/heating/cutting_cables.jpg)
 
-> Before you continue, turn off the circuit breaker to avoid injuries. Use a multimeter or a tester screwdriver to check that the power is off. There are plenty of tutorials on how to test sockets on YouTube.
+> Before you continue, turn off the circuit breaker to avoid injuries. Use a multimeter or a tester screwdriver to check that the power is off.
 
 Take a picture of the original wiring now. You might want to refer to it later.
 
