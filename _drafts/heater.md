@@ -41,7 +41,7 @@ Now let's check the current. It must be under 16 A. My heater has a sticker on t
 I = P/V = 3000 (W) / 230 (V) = 13,04 A < 16 A
 ```
 
-We're within the 16 A limit. The last thing we need to calculate to avoid serious danger is wire size. In the [table of wire sizes](https://en.wikipedia.org/wiki/American_wire_gauge) we can see that for our 13 A current, a 16 AWG wire (1.31mm2) is sufficient. However, it is a good practice to use a thicker wire, so we'll go with 15 AWG (or 1.5mm2 for us Europians). Don't hesitate to use a thick wire even for less powerful heatings. As our wire is very short, it won't cause a substantial power loss.
+We're within the 16 A limit. The last thing we need to calculate to avoid serious danger is wire size. In the [table of wire sizes](https://en.wikipedia.org/wiki/American_wire_gauge) we can see that for our 13 A current, a 16 AWG wire (1.31mm2) is sufficient. However, it is a good practice to use thicker wire, so we'll go with 15 AWG (or 1.5mm2 for us Europeans). Don't hesitate to use a thick wire even for less powerful heatings. As our wire is very short, it won't cause a substantial power loss.
 
 If you are unsure about any of the calculations, ask in the electronics store or call an electrician to help you.
 
@@ -65,7 +65,7 @@ If you decide to flash the firmware, make sure you test the device with the orig
 
 ### Wiring
 
-We are going to connect the Sonoff according to the diagram on the box. For that, we'll need a hole in the skirting board to run the cables through. First, place the Sonoff against the skirting board in the right angle. Mark the hole for the cables and cut it as in the picture below.
+We are going to connect the Sonoff according to the diagram on the box. For that, we'll need a hole in the skirting board to run the cables through. First, place the Sonoff against the skirting board at the right angle. Mark the hole for the cables and cut it as in the picture below.
 
 ![cutting skirting board](/assets/heating/cutting_skirting_board.png)
 
@@ -81,7 +81,7 @@ Connect the cables according to the diagram on the Sonoff. Remember you'll need 
 
 ![cutting cables](/assets/heating/wiring.png)
 
-Put the skirting board and the socket cover back on and voilà! You have a smart heating.
+Put the skirting board and the socket cover back on and voilà! You have a smart heater.
 
 ## Integration with Home Assistant (optional)
 
@@ -123,7 +123,7 @@ Subscribe to `stat/sonoff1/RESULT`  for command results.
 
 <img alt="HASS switches" src="/assets/heating/heating_switches.png" style="display: block; margin-left: auto; margin-right: auto; vertical-align: middle; max-width: 400px"/>
 
-To be able to control our heating from Home Assistant, we'll create an software switch as shown in the picture above. Add the following to your `configuration.yaml` and restart Home Assistant.
+To be able to control our heating from Home Assistant, we'll create a software switch as shown in the picture above. Add the following to your `configuration.yaml` and restart Home Assistant.
 
 ``` yaml
 switch:
@@ -139,7 +139,7 @@ switch:
 
 My heaters (and boiler) have a special [load control switch](https://en.wikipedia.org/wiki/Demand_response) which turns off the power at certain times. This gives me a cheaper tariff but it also means the Sonoff might be offline when I want to control it. In cases like this, when we flip the switch, we don't want to wait for confirmation from the Sonoff. In the config above, we use the `optimistic` option which makes the switch change states immediately.
 
-After the Sonoff goes online again, we want it to pull the state instantly (not the next time we flip the switch). By setting the `retain` setting to `true`, we tell Home Assistant to publish MQTT messages with the `retain` flag. The flag tells newly-subscribed clients this is the "last good state". To make Tasmota pull the state after startup, publish the following MQTT commands:
+After the Sonoff goes online again, we want it to pull the state instantly (not the next time we flip the switch). By setting `retain` to `true`, we tell Home Assistant to publish MQTT messages with the `retain` flag. The flag tells newly-subscribed clients this is the "last good state". To make Tasmota pull the state after startup, publish the following MQTT commands:
 
 ```
 cmnd/sonoff1/ButtonTopic 1
@@ -148,7 +148,7 @@ cmnd/sonoff1/ButtonRetain 1
 
 ### Securing Sonoff Tasmota
 
-Tasmota is incredibly easy to setup but the default settings are rather insecure. We'll tweak them using [Tasmota's MQTT features](https://github.com/arendst/Sonoff-Tasmota/wiki/MQTT-Features).
+Tasmota is incredibly easy to set up but the default settings are rather insecure. We'll tweak them using [Tasmota's MQTT features](https://github.com/arendst/Sonoff-Tasmota/wiki/MQTT-Features).
 
 #### Secure the Web Server
 
@@ -162,7 +162,7 @@ Disable the web server and enable it only for administrative purposes.
 
 #### Disable AP mode
 
-By default, Tasmota goes to the [access point](https://en.wikipedia.org/wiki/Wireless_access_point) mode every time connection to WiFi is lost. So, when your router is offline, Tasmota serves it's own unsecure WiFi network for everyone to join. Publish the following command to disable this behaviour:
+By default, Tasmota goes to the [access point](https://en.wikipedia.org/wiki/Wireless_access_point) mode every time connection to WiFi is lost. So, when your router is offline, Tasmota serves its own unsecured WiFi network for everyone to join. Publish the following command to disable this behaviour:
 
 `cmnd/sonoff1/WifiConfig 5 ### 5 means Wait`
 
