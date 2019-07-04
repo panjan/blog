@@ -5,20 +5,19 @@ title:  "Making Your Electric Heater Smarter"
 
 ![smart heating](/assets/heating/heating_finished.png)
 
-This article will show you how to use the €15 power switch [Sonoff Pow](https://www.itead.cc/sonoff-pow-r2.html) to connect your ordinary electric heater to your WiFi. You'll be able to control it with your phone, set timers and measure power consumption. Sonoff also supports Amazon Alexa, Google Assistant and Google Nest. No more getting up when you feel cosy and want to turn on the heating!
+This article will show you how to use the €15 power switch [Sonoff Pow](https://www.itead.cc/sonoff-pow-r2.html) to connect an ordinary electric heater to your WiFi network. You'll be able to control it with your phone, set timers and measure power consumption. Sonoff also supports Amazon Alexa, Google Assistant and Google Nest. No more getting up when you feel cosy and want to turn on the heating!
 
 Optionally, you can integrate your smart heating to the home automation hub [Home Assistant](https://www.home-assistant.io/) as described later.
 
-## Parts and Materials
+### Parts and Materials
 
 - electric heater
 - [Sonoff POW](https://www.itead.cc/sonoff-pow-r2.html)
-- 1.5mm2 3 core wire (about 0.5m)
-- 1.5mm2 3 core wire with a plug (for testing)
-- 2 screws (TODO: size)
-- wall plugs (only for masonry)
+- 1.5 mm<sup>2</sup> 3 core wire (about 0.5 m)
+- 1.5 mm<sup>2</sup> 3 core wire with a plug (for testing)
+- 2 3.5mm screws (with wall plugs for masonry)
 
-## Tools
+### Tools
 
 - wire cutter
 - utility knife
@@ -30,23 +29,23 @@ Optionally, you can integrate your smart heating to the home automation hub [Hom
 - needle nose pliers for manipulating cables (optional)
 - USB to serial converter and jumpers for flashing the Sonoff (optional)
 
-## Check the Power Rating
+### Check the Power Rating
 
 Before we start, we need to check the power rating of our heater. It must be lower than the one of the Sonoff. Otherwise, we would be risking fire and electrocution.
 
-Take a look at the Sonoff. Depending on which Sonoff version you have, it should say something like `Maxload: 250V 16A` on the box. Use a multimeter to check the voltage of your wall outlet. There are plenty of [tutorials on YouTube](https://www.youtube.com/results?search_query=multimeter+wall+outlet). In my country, we should get 230V and I measured 232V. That's within the 250V limit.
+Take a look at the Sonoff. Depending on which Sonoff version you have, it should say something like `Maxload: 250V 16A` on the box. Use a multimeter to check the voltage of your wall outlet. There are plenty of [tutorials on YouTube](https://www.youtube.com/results?search_query=multimeter+wall+outlet). In my country, we should get 230 V and I measured 232 V. That's within the 250 V limit.
 
-Now let's check the current. It must be under 16A. My heater has a sticker on the side which says 3000W. But how do we know how many amps? Use [the power law `P = IV`](https://en.wikipedia.org/wiki/Electric_power).
+Now let's check the current. It must be under 16 A. My heater has a sticker on the side which says 3000 W. But how do we know how many amps? We'll use [the power law `P = IV`](https://en.wikipedia.org/wiki/Electric_power) (power = current * voltage).
 
 ```
-I = P/V = 3000W / 230V = 13,04A < 16A
+I = P/V = 3000 (W) / 230 (V) = 13,04 A < 16 A
 ```
 
-We're within the 16A limit. The last thing we need to calculate to avoid serious danger is wire size. In the [table of wire sizes](https://en.wikipedia.org/wiki/American_wire_gauge) we can see that for our 13A, a 16AWG wire (1.31mm2) is sufficient. However, it is a good practice to use a thicker wire, so we'll use a 15AWG (or 1.5mm2 for us Europians). Don't hesitate to use a thick wire even for less powerful heatings. As our wire is very short, it won't cause a substantial power loss.
+We're within the 16 A limit. The last thing we need to calculate to avoid serious danger is wire size. In the [table of wire sizes](https://en.wikipedia.org/wiki/American_wire_gauge) we can see that for our 13 A current, a 16 AWG wire (1.31mm2) is sufficient. However, it is a good practice to use a thicker wire, so we'll go with 15 AWG (or 1.5mm2 for us Europians). Don't hesitate to use a thick wire even for less powerful heatings. As our wire is very short, it won't cause a substantial power loss.
 
 If you are unsure about any of the calculations, ask in the electronics store or call an electrician to help you.
 
-## Test the Sonoff
+### Test the Sonoff
 
 Connect your 3 core wire with a plug to the Sonoff (with the plug disconnected of course). Follow the diagram on the box. L stands for line, N is neutral and E is earth ground. In my case, the wires are brown, blue and yellow-green respectively. The colours might vary in different areas.
 
@@ -54,17 +53,17 @@ Connect your 3 core wire with a plug to the Sonoff (with the plug disconnected o
 
 Make sure that the Sonoff works by pairing it to [the app](https://sonoff.itead.cc/en/ewelink). While you're at it, have some fun. Explore the app, connect a lamp (with the plug disconnected!), measure the power consumption, etc.
 
-## Flashing the Sonoff (optional)
+### Flashing the Sonoff (optional)
 
 This step is only required if you want integration with [Home Assistant](https://www.home-assistant.io). Homekit and Google Assistant users can skip this as the original firmware supports both.
 
 Home Assistant doesn't support the original firmware. Luckily, Sonoff devices are relatively easy to flash. I've flashed mine with an alternative [firmware called Sonoff Tasmota](https://github.com/arendst/Sonoff-Tasmota). It is open-source and easy to integrate with Home Assistant. Some soldering and a USB-to-serial converter are required. There are [tutorials on flashing the Sonoff](https://www.google.com/search?q=flashing+sonoff+pow) available.
 
-> Never try to flash the device while connected to power.
+> Never try to flash the device while connected to mains power.
 
 If you decide to flash the firmware, make sure you test the device with the original firmware first.
 
-## Wiring
+### Wiring
 
 We are going to connect the Sonoff according to the diagram on the box. For that, we'll need a hole in the skirting board to run the cables through. First, place the Sonoff against the skirting board in the right angle. Mark the hole for the cables and cut it as in the picture below.
 
@@ -82,7 +81,7 @@ Connect the cables according to the diagram on the Sonoff. Remember you'll need 
 
 ![cutting cables](/assets/heating/wiring.png)
 
-Put the skirting board and the socket cover back on and voilà! You have a smart heating. Congratulations! Now it's time to lie down and turn the heating on and off senselessly.
+Put the skirting board and the socket cover back on and voilà! You have a smart heating.
 
 ## Integration with Home Assistant (optional)
 
@@ -92,15 +91,15 @@ Unlike Google Home and Apple Homekit, Home Assistant is highly customizable, loc
 
 I assume you've flashed your Sonoff with the alternative firmware Sonoff Tasmota. If not, go back to the section "Flashing the Sonoff".
 
-#### MQTT
+### MQTT
 
 To connect Home Assistant to Tasmota, we'll need an [MQTT](https://www.home-assistant.io/components/mqtt/) message broker. We'll use Mosquitto as the embedded broker is deprecated. To set it up on Hassbian, follow [Bruh's video tutorial](https://youtu.be/AsDHEDbyLfg). Hass.io users, use the [Mosquitto Addon](https://www.home-assistant.io/addons/mosquitto/).
 
-> Make sure you set a strong and unique password for your MQTT user. A successful attacker would gain full access to your Sonoff.
+> Make sure you set a strong and unique password for your MQTT user. A successful attacker would gain full access to your Sonoff and other MQTT devices.
 
 You can publish MQTT messages from [Home Assistant](https://www.home-assistant.io/docs/mqtt/service/), from the command line ([mosquitto_pub](https://mosquitto.org/man/mosquitto_pub-1.html)) or using a graphical client ([MQTT.fx](https://mqttfx.jensd.de) works for me on Mac). I'll leave the choice to you.
 
-#### Configuring Tasmota
+### Configuring Tasmota
 
 Configure WiFi and MQTT according to [Tasmota's documentation](https://github.com/arendst/Sonoff-Tasmota/wiki/Initial-Configuration).
 
@@ -108,11 +107,19 @@ Set the `topic` setting to `sonoff1`. Your MQTT configuration should look like t
 
 <img alt="mqtt config page" src="/assets/heating/mqtt_config.png" style="display: block; margin-left: auto; margin-right: auto; vertical-align: middle; max-width: 300px"/>
 
-Now you can send commands to Tasmota in the form `cmnd/sonoff1/<command> <parameter>`. Subscribe to `stat/sonoff1/RESULT` for command results. Available commands are [listed here](https://github.com/arendst/Sonoff-Tasmota/wiki/Commands#mqtt).
+Now you can send commands to Tasmota in the form `cmnd/sonoff1/<command> <parameter>`. Available commands are [listed here](https://github.com/arendst/Sonoff-Tasmota/wiki/Commands###mqtt). Let's try one now:
 
-TODO: example command
+```
+cmnd/sonoff1/POWER ON
+```
 
-#### Adding switches to Home Assistant
+Subscribe to `stat/sonoff1/RESULT`  for command results.
+
+```
+{ "POWER": "ON" }
+```
+
+### Adding switches to Home Assistant
 
 <img alt="HASS switches" src="/assets/heating/heating_switches.png" style="display: block; margin-left: auto; margin-right: auto; vertical-align: middle; max-width: 400px"/>
 
@@ -128,7 +135,7 @@ switch:
     retain: true
 ```
 
-#### Dealing with Power Outages
+### Dealing with Power Outages
 
 My heaters (and boiler) have a special [load control switch](https://en.wikipedia.org/wiki/Demand_response) which turns off the power at certain times. This gives me a cheaper tariff but it also means the Sonoff might be offline when I want to control it. In cases like this, when we flip the switch, we don't want to wait for confirmation from the Sonoff. In the config above, we use the `optimistic` option which makes the switch change states immediately.
 
@@ -139,11 +146,11 @@ cmnd/sonoff1/ButtonTopic 1
 cmnd/sonoff1/ButtonRetain 1
 ```
 
-#### Securing Sonoff Tasmota
+### Securing Sonoff Tasmota
 
 Tasmota is incredibly easy to setup but the default settings are rather insecure. We'll tweak them using [Tasmota's MQTT features](https://github.com/arendst/Sonoff-Tasmota/wiki/MQTT-Features).
 
-##### Secure the Web Server
+#### Secure the Web Server
 
 Anyone in your local network could access the web interface and take complete control of the device. Set a password using the following command:
 
@@ -153,13 +160,13 @@ Disable the web server and enable it only for administrative purposes.
 
 `cmnd/sonoff1/WebServer 0`
 
-##### Disable AP mode
+#### Disable AP mode
 
 By default, Tasmota goes to the [access point](https://en.wikipedia.org/wiki/Wireless_access_point) mode every time connection to WiFi is lost. So, when your router is offline, Tasmota serves it's own unsecure WiFi network for everyone to join. Publish the following command to disable this behaviour:
 
-`cmnd/sonoff1/WifiConfig 5 # 5 means Wait`
+`cmnd/sonoff1/WifiConfig 5 ### 5 means Wait`
 
-##### Read the Docs
+#### Read the Docs
 
 Read more about securing your devices [here](https://github.com/arendst/Sonoff-Tasmota/wiki/Securing-your-IoT-from-hacking).
 
