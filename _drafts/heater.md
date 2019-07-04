@@ -41,13 +41,13 @@ Now let's check the current. It must be under 16 A. My heater has a sticker on t
 I = P/V = 3000 (W) / 230 (V) = 13,04 A < 16 A
 ```
 
-We're within the 16 A limit. The last thing we need to calculate to avoid serious danger is wire size. In the [table of wire sizes](https://en.wikipedia.org/wiki/American_wire_gauge) we can see that for our 13 A current, a 16 AWG wire (1.31mm<sup>2</sup>) is sufficient. However, it is a good practice to use thicker wire, so we'll go with 15 AWG (or 1.5mm<sup>2</sup> for us Europeans). Don't hesitate to use 15 AWG even for less powerful heatings. It won't cause a substantial power loss as our wire is very short.
+We're within the 16 A limit. The last thing we need to calculate to avoid serious danger is wire size. In the [table of wire sizes](https://en.wikipedia.org/wiki/American_wire_gauge) we can see that for our 13 A current, a 16 AWG wire (1.31mm<sup>2</sup>) is sufficient. However, it is a good practice to use thicker wire, so we'll go with 15 AWG (or 1.5mm<sup>2</sup> for us Europeans).
 
 If you are unsure about any of the calculations, ask in the electronics store or call an electrician to help you.
 
 ### Test the Sonoff
 
-Connect your 3 core wire with a plug to the Sonoff (with the plug disconnected of course). Follow the diagram on the box. L stands for line, N is neutral and E is earth ground. In my case, the wires are brown, blue and yellow-green respectively. The colours might vary in different areas.
+Connect your wire with a plug to the Sonoff (with the plug disconnected of course). Follow the diagram on the box. L stands for line, N is neutral and E is earth ground. In my case, the wires are brown, blue and yellow-green respectively. The colours might vary in different areas.
 
 ![sonoff](/assets/heating/sonoff_diagram.png)
 
@@ -89,7 +89,7 @@ Put the skirting board and the socket cover back on and voilà! You have a smart
 
 Unlike Google Home and Apple Homekit, Home Assistant is highly customizable, local and open-source. I run my instance on a Raspberry Pi. Pick your hardware and install it according to [these instructions](https://www.home-assistant.io/getting-started/).
 
-I assume you've flashed your Sonoff with the alternative firmware Sonoff Tasmota. If not, go back to the section "Flashing the Sonoff".
+I assume you've flashed your Sonoff with the alternative firmware Sonoff Tasmota. If not, go back to the section <a href="#flashing-the-sonoff-optional">Flashing the Sonoff</a>.
 
 ### MQTT
 
