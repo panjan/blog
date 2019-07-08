@@ -12,22 +12,23 @@ Optionally, you can integrate your smart heating to the home automation hub [Hom
 ### Parts and Materials
 
 - electric heater
-- [Sonoff POW](https://www.itead.cc/sonoff-pow-r2.html)
-- 1.5 mm<sup>2</sup> 3 core wire (about 0.5 m)
-- 1.5 mm<sup>2</sup> 3 core wire with a plug (for testing)
-- 2 3.5mm screws (with wall plugs for masonry)
+- Sonoff POW <a href="https://www.itead.cc/sonoff-pow-r2.html" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- power cord with a free end (for testing the Sonoff) <a href="http://s.click.aliexpress.com/e/iyEbSzS" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- 0.5m of 1.5 mm<sup>2</sup> 3 core wire (they'll cut it for you at the hardware store so you don't have to buy the whole spool) <a href="http://s.click.aliexpress.com/e/KlWNjKY" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- 2 pc 3.5 mm self tapping screws (with wall anchors if needed) <a href="http://s.click.aliexpress.com/e/Ub30HNA" target="_blank"><i class="fa fa-shopping-cart"></i></a>
 
 ### Tools
 
-- wire cutter
-- utility knife
-- pencil
-- electric drill
-- screwdriver
-- multimeter
-- headlamp (optional)
-- needle nose pliers for manipulating cables (optional)
-- USB to serial converter and jumpers for flashing the Sonoff (optional)
+- wire stripper <a href="http://s.click.aliexpress.com/e/buZfHtLa" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- utility knife <a href="http://s.click.aliexpress.com/e/c339dPyk" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- pencil <a href="http://s.click.aliexpress.com/e/cDr0fBhI" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- electric drill <a href="http://s.click.aliexpress.com/e/b1gkDRWg" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- screwdriver <a href="http://s.click.aliexpress.com/e/HYTgl4M" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- multimeter <a href="http://s.click.aliexpress.com/e/YaaRHOs" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- headlamp (optional) <a href="http://s.click.aliexpress.com/e/lPtwlbE" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- needle nose pliers for manipulating cables (optional) <a href="http://s.click.aliexpress.com/e/banEej84" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- USB to serial converter and jumpers for flashing the Sonoff (optional) <a href="http://s.click.aliexpress.com/e/ISUlAnW" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+
 
 ### Check the Power Rating
 
