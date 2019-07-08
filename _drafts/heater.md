@@ -32,7 +32,7 @@ Optionally, you can integrate your smart heating to the home automation hub [Hom
 
 ### Check the Power Rating
 
-Before we start, we need to check the power rating of our heater. It must be lower than the one of the Sonoff. Otherwise, we would be risking fire and electrocution.
+Before we start, we need to check the power rating of our heater. It must be lower than the one of our Sonoff. Otherwise, we would be risking fire and electrocution.
 
 Take a look at the Sonoff. Depending on which version you have, it should say something like `Maxload: 250V 16A` on the box. Use a multimeter to check the voltage of your wall outlet. There are plenty of [tutorials on YouTube](https://www.youtube.com/results?search_query=multimeter+wall+outlet). In my country, we should get 230 V and I measured 232 V. That's within the 250 V limit.
 
@@ -48,7 +48,7 @@ If you are unsure about any of the calculations, ask in the electronics store or
 
 ### Test the Sonoff
 
-Connect your wire with a plug to the Sonoff (with the plug disconnected of course). Follow the diagram on the box. L stands for line, N is neutral and E is earth ground. In my case, the wires are brown, blue and yellow-green respectively. The colours might vary in different areas.
+While it's disconnected, connect the power chord to your Sonoff. Follow the diagram on the box. L stands for line, N is neutral and E is earth ground. In my case, the wires are brown, blue and yellow-green respectively. The colours might vary in different areas.
 
 ![sonoff](/assets/heating/sonoff_diagram.png)
 
