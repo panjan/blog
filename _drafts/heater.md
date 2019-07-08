@@ -14,7 +14,7 @@ Optionally, you can integrate your smart heating to the home automation hub [Hom
 - electric heater
 - Sonoff POW <a href="https://www.itead.cc/sonoff-pow-r2.html" target="_blank"><i class="fa fa-shopping-cart"></i></a>
 - power cord with a free end (for testing the Sonoff) <a href="http://s.click.aliexpress.com/e/iyEbSzS" target="_blank"><i class="fa fa-shopping-cart"></i></a>
-- 0.5m of 1.5 mm<sup>2</sup> 3 core wire (they'll cut it for you at the hardware store so you don't have to buy the whole spool) <a href="http://s.click.aliexpress.com/e/KlWNjKY" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- 0.5 m of 1.5 mm<sup>2</sup> 3 core wire (they'll cut it for you at the hardware store so you don't have to buy the whole spool) <a href="http://s.click.aliexpress.com/e/KlWNjKY" target="_blank"><i class="fa fa-shopping-cart"></i></a>
 - 2 pcs 3.5 mm self tapping screws (with wall plugs if needed) <a href="http://s.click.aliexpress.com/e/Ub30HNA" target="_blank"><i class="fa fa-shopping-cart"></i></a>
 
 ### Tools
@@ -27,8 +27,11 @@ Optionally, you can integrate your smart heating to the home automation hub [Hom
 - multimeter <a href="http://s.click.aliexpress.com/e/YaaRHOs" target="_blank"><i class="fa fa-shopping-cart"></i></a>
 - headlamp (optional) <a href="http://s.click.aliexpress.com/e/lPtwlbE" target="_blank"><i class="fa fa-shopping-cart"></i></a>
 - needle nose pliers for manipulating cables (optional) <a href="http://s.click.aliexpress.com/e/banEej84" target="_blank"><i class="fa fa-shopping-cart"></i></a>
-- USB to serial converter and jumpers for flashing the Sonoff (optional) <a href="http://s.click.aliexpress.com/e/ISUlAnW" target="_blank"><i class="fa fa-shopping-cart"></i></a>
 
+#### Tools for Flashing Sonoff (optional)
+- soldering iron <a href="http://s.click.aliexpress.com/e/c1ibL8Fe" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- USB to serial converter <a href="http://s.click.aliexpress.com/e/ISUlAnW" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- jumpers <a href="http://s.click.aliexpress.com/e/bLcdR70G" target="_blank"><i class="fa fa-shopping-cart"></i></a>
 
 ### Check the Power Rating
 
@@ -42,19 +45,19 @@ Now let's check the current. It must be under 16 A. My heater has a sticker on t
 I = P/V = 3000 (W) / 230 (V) = 13,04 A < 16 A
 ```
 
-We're within the 16 A limit. The last thing we need to calculate to avoid serious danger is wire size. In the [table of wire sizes](https://en.wikipedia.org/wiki/American_wire_gauge) we can see that for our 13 A current, a 16 AWG wire (1.31mm<sup>2</sup>) is sufficient. However, it is a good practice to use thicker wire, so we'll go with 15 AWG (or 1.5mm<sup>2</sup> for us Europeans).
+We're within the 16 A limit. The last thing we need to calculate to avoid serious danger is wire size. In the [table of wire sizes](https://en.wikipedia.org/wiki/American_wire_gauge) we can see that for our 13 A current, a 16 AWG wire (1.31mm<sup>2</sup>) is sufficient. However, it will be safer to use the thicker 15 AWG (or 1.5mm<sup>2</sup> for us Europeans).
 
 If you are unsure about any of the calculations, ask in the electronics store or call an electrician to help you.
 
-### Test the Sonoff
+### Test Your Sonoff
 
-While it's disconnected, connect the power chord to your Sonoff. Follow the diagram on the box. L stands for line, N is neutral and E is earth ground. In my case, the wires are brown, blue and yellow-green respectively. The colours might vary in different areas.
+Connect the power chord to the Sonoff. Follow the diagram on the box (highlighted in the picture below). L stands for line, N is neutral and E is earth ground. In my case, the wires are brown, blue and yellow-green respectively. The colours might vary in different areas.
 
 ![sonoff](/assets/heating/sonoff_diagram.png)
 
-Make sure that the Sonoff works by pairing it to [the app](https://sonoff.itead.cc/en/ewelink). While you're at it, have some fun. Explore the app, connect a lamp (with the plug disconnected!), measure the power consumption, etc.
+Make sure that the Sonoff works by pairing it to [the app](https://sonoff.itead.cc/en/ewelink). While you're at it, have some fun. Explore the app, connect a lamp (with the power cord disconnected!), measure the power consumption, etc.
 
-### Flashing the Sonoff (optional)
+### Flashing Sonoff (optional)
 
 This step is only required if you want integration with [Home Assistant](https://www.home-assistant.io). Homekit and Google Home users can skip this as Sonoff supports both out of the box.
 
@@ -78,7 +81,9 @@ Before we start fiddling with your electrical wiring, put on your headlamp. Make
 
 > Before you continue, turn off the circuit breaker to avoid injuries. Use a multimeter or a tester screwdriver to check that the power is off.
 
-Connect the cables according to the diagram on the Sonoff. Remember you'll need to screw the cover back to the Sonoff. It's a tight fit so make sure your cables aren't crossing at the point of contact. Test your connections for [continuity with a multimeter](https://www.google.com/search?q=test+for+continuity+with+a+multimeter). A loose connection could cause a fire.
+Connect the cables according to the diagram on the Sonoff. Remember you'll need to screw the cover back to the Sonoff. It's a tight fit so make sure your cables aren't crossing at the point of contact.
+
+Test your connections for [continuity with a multimeter](https://www.google.com/search?q=test+for+continuity+with+a+multimeter). A loose connection could cause a fire.
 
 ![cutting cables](/assets/heating/wiring.png)
 
@@ -90,7 +95,7 @@ Put the skirting board and the socket cover back on and voilà! You have a smart
 
 Unlike Google Home and Apple Homekit, Home Assistant is highly customizable, local and open-source. I run my instance on a Raspberry Pi. Pick your hardware and install it according to [these instructions](https://www.home-assistant.io/getting-started/).
 
-I assume you've flashed your Sonoff with the alternative firmware Sonoff Tasmota. If not, go back to the section <a href="#flashing-the-sonoff-optional">Flashing the Sonoff</a>.
+I assume you've flashed your Sonoff with the alternative firmware Sonoff Tasmota. If not, go back to the section <a href="#flashing-sonoff-optional">Flashing the Sonoff</a>.
 
 ### MQTT
 
@@ -140,7 +145,7 @@ switch:
 
 My heaters (and boiler) have a special [load control switch](https://en.wikipedia.org/wiki/Demand_response) which turns off the power at certain times. In turn, I get a cheaper tariff but it also means my Sonoff might be offline when I want to control it. In cases like this, when we flip the switch, we don't want to wait for confirmation from the Sonoff. In the config above, we use the `optimistic` option which makes the switch change states immediately.
 
-After the Sonoff goes online again, we want it to pull the state instantly (not the next time we flip the switch). By setting `retain` to `true`, we tell Home Assistant to publish MQTT messages with the `retain` flag. The flag tells newly-subscribed clients this is the "last good state". To make Tasmota pull the state after startup, publish the following MQTT commands:
+After the Sonoff goes online again, we want it to pull the state instantly (not the next time we flip the switch). By setting `retain` to `true`, we make Home Assistant publish MQTT messages with the `retain` flag. It tells newly-subscribed clients this is the "last good state". To make Tasmota pull the state after startup, publish the following MQTT commands:
 
 ```
 cmnd/sonoff1/ButtonTopic 1
