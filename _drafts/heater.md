@@ -15,7 +15,7 @@ Optionally, you can integrate your smart heating to the home automation hub [Hom
 - Sonoff POW <a href="https://www.itead.cc/sonoff-pow-r2.html" target="_blank"><i class="fa fa-shopping-cart"></i></a>
 - power cord with a free end (for testing the Sonoff) <a href="http://s.click.aliexpress.com/e/iyEbSzS" target="_blank"><i class="fa fa-shopping-cart"></i></a>
 - 0.5m of 1.5 mm<sup>2</sup> 3 core wire (they'll cut it for you at the hardware store so you don't have to buy the whole spool) <a href="http://s.click.aliexpress.com/e/KlWNjKY" target="_blank"><i class="fa fa-shopping-cart"></i></a>
-- 2 pc 3.5 mm self tapping screws (with wall anchors if needed) <a href="http://s.click.aliexpress.com/e/Ub30HNA" target="_blank"><i class="fa fa-shopping-cart"></i></a>
+- 2 pcs 3.5 mm self tapping screws (with wall plugs if needed) <a href="http://s.click.aliexpress.com/e/Ub30HNA" target="_blank"><i class="fa fa-shopping-cart"></i></a>
 
 ### Tools
 
