@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Making Your Electric Heater Smarter"
+title: "Making Your Electric Heater Smarter"
 ---
 
 ![smart heating](/assets/heating/heating_finished.png)
@@ -29,6 +29,7 @@ Optionally, you can integrate your smart heating to the home automation hub [Hom
 - needle nose pliers for manipulating cables (optional) <a href="http://s.click.aliexpress.com/e/banEej84" target="_blank"><i class="fa fa-shopping-cart"></i></a>
 
 #### Tools for Flashing Sonoff (optional)
+
 - soldering iron <a href="http://s.click.aliexpress.com/e/c1ibL8Fe" target="_blank"><i class="fa fa-shopping-cart"></i></a>
 - USB to serial converter <a href="http://s.click.aliexpress.com/e/ISUlAnW" target="_blank"><i class="fa fa-shopping-cart"></i></a>
 - jumpers <a href="http://s.click.aliexpress.com/e/bLcdR70G" target="_blank"><i class="fa fa-shopping-cart"></i></a>
@@ -119,7 +120,7 @@ Now you can send commands to Tasmota in the form `cmnd/sonoff1/<command> <parame
 cmnd/sonoff1/POWER ON
 ```
 
-Subscribe to `stat/sonoff1/RESULT`  for command results.
+Subscribe to `stat/sonoff1/RESULT` for command results.
 
 ```
 { "POWER": "ON" }
@@ -131,7 +132,7 @@ Subscribe to `stat/sonoff1/RESULT`  for command results.
 
 To be able to control our heating from Home Assistant, we'll create a software switch as shown in the picture above. Add the following to your `configuration.yaml` and restart Home Assistant.
 
-``` yaml
+```yaml
 switch:
   - platform: mqtt
     name: "Bedroom Heating"
@@ -186,4 +187,4 @@ Read more about securing your devices [here](https://github.com/arendst/Sonoff-T
 
 ## Conclusion
 
-We made a regular electric heater a lot smarter for about €15. Then we flashed it with open-source software and secured it from hacking. Nice! Now it's time to take it further. How about making a Nest-like thermostat using Home Assistant and a thermometer? I'd love to hear about your projects in the comments section.
+We made a regular electric heater a lot smarter for about €15. Then we flashed it with open-source software and secured it from hacking. Nice!
