@@ -40,13 +40,15 @@ Before we start, we need to check the power rating of our heater. It must be low
 
 Take a look at the Sonoff. Depending on which version you have, it should say something like `Maxload: 250V 16A` on the box. Use a multimeter to check the voltage of your wall outlet. There are plenty of [tutorials on YouTube](https://www.youtube.com/results?search_query=multimeter+wall+outlet). In my country, we should get 230 V and I measured 232 V. That's within the 250 V limit.
 
-Now let's check the current. It must be under 16 A. My heater has a sticker on the side which says 3000 W. But how do we know how many amps? We'll use [the power law](https://en.wikipedia.org/wiki/Electric_power) `P = IV` (or `power = current * voltage`).
+Now let's check the current. As the label on our Sonoff says, it must be under 16 A. My heater has a sticker on the side which says 3000 W. But how do we know how many amps? We'll use [the power law](https://en.wikipedia.org/wiki/Electric_power) `P = IV` (or `power = current * voltage`).
 
 ```
 I = P/V = 3000 (W) / 230 (V) = 13,04 A < 16 A
 ```
 
-We're within the 16 A limit. The last thing we need to calculate to avoid serious danger is wire size. In the [table of wire sizes](https://en.wikipedia.org/wiki/American_wire_gauge) we can see that for our 13 A current, a 16 AWG wire (1.31mm<sup>2</sup>) is sufficient. However, it will be safer to use the thicker 15 AWG (or 1.5mm<sup>2</sup> for us Europeans).
+We are within the 16 A limit which means our Sonoff can handle any amount of current the heater might draw.
+
+The last thing we need to calculate to avoid serious danger is wire size. It can be calculated using the [table of wire sizes](https://en.wikipedia.org/wiki/American_wire_gauge). However, we can't use the heater's 13 A power rating for the calculation. If there's a short circuit in the heater, it might draw more than 13 A. If that happens, we have to be sure the cable can handle the extra current until our main breaker goes off. For this reason, we'll be working with the rating of our main breaker which is 16 A in my case. According to the table of wire sizes, 14 AWG wire should be sufficient, but it is good practice to use a thicker one so we'll go for 13 AWG (or 2.5mm for us Europeans).
 
 If you are unsure about any of the calculations, ask in the electronics store or call an electrician to help you.
 
